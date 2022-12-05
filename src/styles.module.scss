@@ -105,14 +105,19 @@
     }
   }
 }
-
+.inputWrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
 .input {
+  max-width: 200px;
   height: 50px;
   line-height: 50px;
   font-family: 'Satoshi', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 60px 0 20px;
   border: none;
   border-radius: 8px;
   background: $input;
@@ -123,6 +128,15 @@
     box-shadow: $input-shadow-h;
     transition: all 300ms ease-in-out;
   }
+  & ~ svg {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
 }
 .inputDark {
   @extend .input;
@@ -132,5 +146,191 @@
   &:focus {
     outline: none;
     box-shadow: $dark-flat;
+  }
+}
+.textareaproperties {
+  padding: 25px 20px;
+  line-height: 20px;
+  width: 200px;
+  height: 100px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 150px;
+  max-height: 300px;
+  transition: none;
+}
+.textarea {
+  @extend .input;
+  @extend .textareaproperties;
+  &Dark {
+    @extend .inputDark;
+    @extend .textareaproperties;
+  }
+}
+
+.radio {
+  background: $input;
+  box-shadow: $input-shadow;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  &__inner {
+    width: 0px;
+    height: 0px;
+    border-radius: 999px;
+    transition: all 300ms ease-in-out;
+    &Active {
+      border-radius: 999px;
+      background: $main;
+      box-shadow: $main-shadow;
+      transition: all 300ms ease-in-out;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &Dark {
+    @extend .radio;
+    background: $input-dark;
+    box-shadow: $input-dark-s;
+    & .radio__inner {
+      @extend .radio__inner;
+      &Active {
+        @extend .radio__innerActive;
+        background: $main;
+        box-shadow: $main-shadow;
+      }
+    }
+  }
+}
+
+.checkbox {
+  @extend .radio;
+  border-radius: 8px;
+
+  &__inner {
+    @extend .radio__inner;
+    border-radius: 8px;
+    &Active {
+      border-radius: 8px;
+      @extend .radio__innerActive;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.checkboxDark {
+  @extend .checkbox;
+  background: $input-dark;
+  box-shadow: $input-dark-s;
+  & .checkbox__inner {
+    @extend .checkbox__inner;
+    &Active {
+      @extend .checkbox__innerActive;
+      background: $main;
+      box-shadow: $main-shadow;
+    }
+  }
+}
+
+.spotlight {
+  @extend .radio;
+  width: 79px;
+  height: 79px;
+
+  &__inner {
+    @extend .radio__inner;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: $button;
+    box-shadow: $button-shadow;
+
+    &Active {
+      @extend .spotlight__inner;
+      width: 54px;
+      height: 54px;
+      background: $main;
+      box-shadow: $main-shadow;
+    }
+  }
+}
+
+.spotlightDark {
+  @extend .spotlight;
+  background: $input-dark;
+  box-shadow: $input-dark-s;
+  & .spotlight__inner {
+    @extend .spotlight__inner;
+    background: $dark-button;
+    box-shadow: $dark-button-s;
+    &Active {
+      @extend .spotlight__innerActive;
+      background: $main;
+      box-shadow: $main-shadow;
+    }
+  }
+}
+
+.select__inner {
+  font-family: 'Satoshi', sans-serif;
+  background: $button;
+  box-shadow: $button-shadow;
+  color: #171717;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 30px;
+  padding: 0 20px;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 20px;
+  transition: all 300ms ease-in-out;
+  &Dark {
+    @extend .select__inner;
+    color: $bg;
+    background: $dark-button;
+    box-shadow: $dark-button-s;
+  }
+}
+
+.select__options {
+  background: $bg;
+  background: $button;
+  box-shadow: $button-shadow;
+  overflow: hidden;
+  width: 240px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  & div {
+    padding: 0 40px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    &:hover {
+      cursor: pointer;
+      font-weight: 900;
+      background: #d9d9d930;
+    }
+  }
+}
+
+.select__optionsDark {
+  @extend .select__options;
+  background: $dark-button;
+  box-shadow: $dark-button-s;
+
+  & div {
+    color: $bg;
+    &:hover {
+      background: #d9d9d930;
+    }
   }
 }

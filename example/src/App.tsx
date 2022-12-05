@@ -1,6 +1,17 @@
 import React from 'react'
 
-import { Button, IconButton, Input, Link, NavbarBtn } from 'majr-react'
+import {
+  Button,
+  Checkbox,
+  IconButton,
+  Input,
+  Link,
+  NavbarBtn,
+  Radio,
+  Select,
+  Spotlight,
+  Textarea
+} from 'majr-react'
 import 'majr-react/dist/index.css'
 
 const App = () => {
@@ -69,6 +80,20 @@ const App = () => {
     })
   }, [theme])
   const [username, setUsername] = React.useState('')
+  const [radio, setRadio] = React.useState<boolean[]>([false, true, false])
+  const [radio2, setRadio2] = React.useState<boolean[]>([false, true, false])
+  const [checkbox, setCheckbox] = React.useState<boolean[]>([
+    false,
+    false,
+    false
+  ])
+  const [checkbox2, setCheckbox2] = React.useState<boolean[]>([
+    false,
+    false,
+    false
+  ])
+  const [spotlight, setSpotlight] = React.useState(false)
+  const [select, setSelect] = React.useState(-1)
   return (
     <section
       style={{
@@ -129,11 +154,85 @@ const App = () => {
         placeholder='Enter username'
         variant='light'
       />
-      <br />
       <Input
         text={username}
         setText={setUsername}
         placeholder='Enter username'
+        variant='dark'
+      />
+      <Input
+        text={username}
+        setText={setUsername}
+        placeholder='Enter password'
+        variant='password'
+      />
+      <Input
+        text={username}
+        setText={setUsername}
+        placeholder='Enter password'
+        variant='passwordDark'
+      />
+      <Input
+        text={username}
+        setText={setUsername}
+        placeholder='Search...'
+        variant='searchDark'
+      />
+      <Textarea text={username} setText={setUsername} placeholder='Search...' />
+      <Textarea
+        text={username}
+        setText={setUsername}
+        placeholder='Search...'
+        variant='dark'
+      />
+      <br />
+      <Radio radio={radio} setRadio={setRadio} index={0} />
+      <Radio radio={radio} setRadio={setRadio} index={1} />
+      <Radio radio={radio} setRadio={setRadio} index={2} />
+      <br />
+      <Radio radio={radio2} setRadio={setRadio2} index={0} variant='dark' />
+      <Radio radio={radio2} setRadio={setRadio2} index={1} variant='dark' />
+      <Radio radio={radio2} setRadio={setRadio2} index={2} variant='dark' />
+      <br />
+      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={0} />
+      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={1} />
+      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={2} />
+      <br />
+      <Checkbox
+        checkbox={checkbox2}
+        setCheckbox={setCheckbox2}
+        index={0}
+        variant='dark'
+      />
+      <Checkbox
+        checkbox={checkbox2}
+        setCheckbox={setCheckbox2}
+        index={1}
+        variant='dark'
+      />
+      <Checkbox
+        checkbox={checkbox2}
+        setCheckbox={setCheckbox2}
+        index={2}
+        variant='dark'
+      />
+      <br />
+      <Spotlight
+        clicked={spotlight}
+        setClicked={setSpotlight}
+        variant='light'
+      />
+      <Spotlight clicked={spotlight} setClicked={setSpotlight} variant='dark' />
+      <br />
+      <Select
+        select={['Option 1', 'Option 2', 'Option 3', 'Option 4']}
+        setSelect={setSelect}
+        def='Select an option'
+      />
+      <Select
+        select={['Option 1', 'Option 2', 'Option 3', 'Option 4']}
+        setSelect={setSelect}
+        def='Select an option'
         variant='dark'
       />
     </section>

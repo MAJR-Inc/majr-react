@@ -211,31 +211,201 @@
   box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
 }
 
-.input, .inputDark {
+.inputWrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input, .textarea, .inputDark, .textareaDark {
+  max-width: 200px;
   height: 50px;
   line-height: 50px;
   font-family: "Satoshi", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 60px 0 20px;
   border: none;
   border-radius: 8px;
   background: #f4f4f4;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
   transition: all 300ms ease-in-out;
 }
-.input:focus, .inputDark:focus {
+.input:focus, .textarea:focus, .inputDark:focus, .textareaDark:focus {
   outline: none;
   box-shadow: -5px 5px 10px rgba(202, 202, 202, 0.2), 5px -5px 10px rgba(202, 202, 202, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(202, 202, 202, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(202, 202, 202, 0.5);
   transition: all 300ms ease-in-out;
 }
+.input ~ svg, .textarea ~ svg, .inputDark ~ svg, .textareaDark ~ svg {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
 
-.inputDark {
+.inputDark, .textareaDark {
   background: #33383d;
   box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
   color: #f9f9f9;
 }
-.inputDark:focus {
+.inputDark:focus, .textareaDark:focus {
   outline: none;
   box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+
+.textareaproperties, .textareaDark, .textarea {
+  padding: 25px 20px;
+  line-height: 20px;
+  width: 200px;
+  height: 100px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 150px;
+  max-height: 300px;
+  transition: none;
+}
+
+.radio, .spotlight, .spotlightDark, .checkbox, .checkboxDark, .radioDark {
+  background: #f4f4f4;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.radio__inner, .spotlight__inner, .spotlightDark .spotlight__inner, .spotlight__innerActive, .spotlightDark .spotlight__innerActive, .checkbox__inner, .checkboxDark .checkbox__inner, .radioDark .radio__inner {
+  width: 0px;
+  height: 0px;
+  border-radius: 999px;
+  transition: all 300ms ease-in-out;
+}
+.radio__innerActive, .checkbox__innerActive, .checkboxDark .checkbox__innerActive, .radioDark .radio__innerActive {
+  border-radius: 999px;
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+  transition: all 300ms ease-in-out;
+  width: 20px;
+  height: 20px;
+}
+.radioDark {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+.radioDark .radio__innerActive, .radioDark .checkbox__innerActive {
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+.checkbox, .checkboxDark {
+  border-radius: 8px;
+}
+.checkbox__inner, .checkboxDark .checkbox__inner {
+  border-radius: 8px;
+}
+.checkbox__innerActive, .checkboxDark .checkbox__innerActive {
+  border-radius: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxDark {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+.checkboxDark .checkbox__innerActive {
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+.spotlight, .spotlightDark {
+  width: 79px;
+  height: 79px;
+}
+.spotlight__inner, .spotlightDark .spotlight__inner, .spotlight__innerActive, .spotlightDark .spotlight__innerActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+}
+.spotlight__innerActive, .spotlightDark .spotlight__innerActive {
+  width: 54px;
+  height: 54px;
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+.spotlightDark {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+.spotlightDark .spotlight__inner, .spotlightDark .spotlight__innerActive {
+  background: linear-gradient(135deg, #30353a 0%, #363b40 100%);
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+.spotlightDark .spotlight__innerActive {
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+.select__inner, .select__innerDark {
+  font-family: "Satoshi", sans-serif;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  color: #171717;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 30px;
+  padding: 0 20px;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 20px;
+  transition: all 300ms ease-in-out;
+}
+.select__innerDark {
+  color: #f9f9f9;
+  background: linear-gradient(135deg, #30353a 0%, #363b40 100%);
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+
+.select__options, .select__optionsDark {
+  background: #f9f9f9;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  overflow: hidden;
+  width: 240px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.select__options div, .select__optionsDark div {
+  padding: 0 40px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  line-height: 50px;
+}
+.select__options div:hover, .select__optionsDark div:hover {
+  cursor: pointer;
+  font-weight: 900;
+  background: rgba(217, 217, 217, 0.1882352941);
+}
+
+.select__optionsDark {
+  background: linear-gradient(135deg, #30353a 0%, #363b40 100%);
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+.select__optionsDark div {
+  color: #f9f9f9;
+}
+.select__optionsDark div:hover {
+  background: rgba(217, 217, 217, 0.1882352941);
 }
