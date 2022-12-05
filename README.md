@@ -32,12 +32,12 @@ export default function Home(){
 ## Button
 
 **Props:**
-
+```
 text: string
 onClick: () => void
 variant?: 'light' (default) | 'dark' | 'main' | 'highlight' | 'highlightdark'
 rounded?: boolean (default: false)
-
+```
 ```tsx
 import React, { Component } from 'react'
 
@@ -51,10 +51,12 @@ import 'majr-react/dist/index.css'
 Uses the same shadows as the Button component, but only has an icon.
 
 **Props:**
+```
 icon: any
 onClick: () => void
 variant?: 'light' | 'dark'
 rounded?: boolean
+```
 
 ```tsx
 import React, { Component } from 'react'
@@ -71,12 +73,13 @@ These are the buttons used in the navbar of the Chrome extension.
 Uses the same shadows as the Button component, but has an icon and text. The active looks like an input
 
 **Props:**
+```
 icon: any
 text: string
 onClick: () => void
 variant?: 'light' | 'dark' | 'active' | 'activeDark'
 rounded?: boolean
-
+```
 ```tsx
 import React, { Component } from 'react'
 
@@ -89,11 +92,12 @@ import 'majr-react/dist/index.css'
 ## Input
 
 **Props:**
+```
 text: string
 setText: (text: string) => void
 variant?: 'light' | 'dark'
 placeholder?: string
-
+```
 ```tsx
 import React, { Component } from 'react'
 
