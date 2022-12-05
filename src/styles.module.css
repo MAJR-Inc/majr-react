@@ -1,0 +1,241 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap");
+@font-face {
+  font-family: "Nasalization";
+  src: url("https://tdm.ar/nasalization-rg-webfont.ttf");
+  font-display: swap;
+}
+.flat-light {
+  border-radius: 12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+  box-shadow: -33px 33px 66px rgba(224, 224, 224, 0.2), 33px -33px 66px rgba(224, 224, 224, 0.2), -33px -33px 66px rgba(255, 255, 255, 0.9), 33px 33px 83px rgba(224, 224, 224, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 224, 224, 0.5);
+}
+.flat-light > h1, .flat-light > h2, .flat-light > h3, .flat-light > h4, .flat-light > p {
+  text-align: center;
+}
+
+.inputLight {
+  background: #f9f9f9;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(204, 204, 204, 0.5), inset -5px 5px 10px rgba(204, 204, 204, 0.2), inset 5px -5px 10px rgba(204, 204, 204, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(204, 204, 204, 0.9);
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 20px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  transition: all 300ms ease-in-out;
+  /* hide arrows
+  Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+.inputLight:hover, .inputLight:focus {
+  transition: all 300ms ease-in-out;
+  outline: none;
+  box-shadow: -5px 5px 10px rgba(204, 204, 204, 0.2), 5px -5px 10px rgba(204, 204, 204, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(204, 204, 204, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(204, 204, 204, 0.5);
+}
+.inputLight::-webkit-outer-spin-button, .inputLight::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+.inputLight[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+.button, .buttonDark, .buttonSecondary, .buttonMain {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  border: none;
+  color: #32383d;
+}
+.button:hover, .buttonDark:hover, .buttonSecondary:hover, .buttonMain:hover {
+  transition: all 300ms ease-in-out;
+  box-shadow: -5px 5px 10px rgba(195, 195, 195, 0.2), 5px -5px 10px rgba(195, 195, 195, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(195, 195, 195, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(195, 195, 195, 0.5);
+}
+.buttonMain {
+  background: linear-gradient(135deg, #e9124d 0%, #d31045 100%);
+  border: none;
+  box-shadow: -2px 2px 4px rgba(200, 15, 66, 0.2), 2px -2px 4px rgba(200, 15, 66, 0.2), -2px -2px 4px rgba(244, 19, 80, 0.9), 2px 2px 5px rgba(200, 15, 66, 0.9), inset 1px 1px 2px rgba(244, 19, 80, 0.3), inset -1px -1px 2px rgba(200, 15, 66, 0.5);
+  color: #f9f9f9;
+}
+.buttonMain:hover {
+  box-shadow: -5px 5px 10px rgba(200, 15, 66, 0.2), 5px -5px 10px rgba(200, 15, 66, 0.2), -5px -5px 10px rgba(244, 19, 80, 0.9), 5px 5px 13px rgba(200, 15, 66, 0.9), inset 1px 1px 2px rgba(244, 19, 80, 0.3), inset -1px -1px 2px rgba(200, 15, 66, 0.5);
+}
+.buttonSecondary {
+  color: #f9f9f9;
+  background: linear-gradient(135deg, #3b3b3e 0%, #353538 100%);
+  box-shadow: -2px 2px 4px rgba(50, 50, 53, 0.2), 2px -2px 4px rgba(50, 50, 53, 0.2), -2px -2px 4px rgba(62, 62, 65, 0.9), 2px 2px 5px rgba(50, 50, 53, 0.9), inset 1px 1px 2px rgba(62, 62, 65, 0.3), inset -1px -1px 2px rgba(50, 50, 53, 0.5);
+  border-radius: 12px;
+}
+
+.linkAnimated {
+  text-align: right;
+  color: #de1149;
+  padding: 3px 10px;
+  font-family: "Satoshi";
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.linkAnimated:hover {
+  color: #de1149;
+}
+.linkAnimated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #de1149;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.linkAnimated:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.linkAnimated:hover, .linkAnimated:focus {
+  outline: none;
+}
+.linkAnimated:hover, .linkAnimated:focus, .linkAnimated:active {
+  color: #de1149;
+}
+
+.buttonDark {
+  color: #f9f9f9;
+  background: linear-gradient(135deg, #30353a 0%, #363b40 100%);
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+.buttonDark:hover {
+  box-shadow: -5px 5px 10px rgba(35, 39, 42, 0.2), 5px -5px 10px rgba(35, 39, 42, 0.2), -5px -5px 10px rgba(67, 73, 80, 0.9), 5px 5px 13px rgba(35, 39, 42, 0.9), inset 1px 1px 2px rgba(67, 73, 80, 0.3), inset -1px -1px 2px rgba(35, 39, 42, 0.5);
+}
+
+.link {
+  font-family: "Satoshi", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  color: #32383d;
+  transition: all 300ms ease-in-out;
+}
+.link:hover {
+  transition: all 300ms ease-in-out;
+  color: #de1149;
+  text-decoration: underline;
+}
+
+.iconButton, .navbarBtnActive, .navbarBtnActiveDark, .navbarBtn, .iconButtonDark, .navbarBtnDark {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  transition: all 300ms ease-in-out;
+}
+.iconButton:hover, .navbarBtnActive:hover, .navbarBtnActiveDark:hover, .navbarBtn:hover, .iconButtonDark:hover, .navbarBtnDark:hover {
+  transition: all 300ms ease-in-out;
+  box-shadow: -5px 5px 10px rgba(143, 143, 143, 0.2), 5px -5px 10px rgba(143, 143, 143, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(143, 143, 143, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(143, 143, 143, 0.5);
+}
+.iconButtonDark, .navbarBtnDark {
+  background: linear-gradient(135deg, #30353a 0%, #363b40 100%);
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+.iconButtonDark:hover, .navbarBtnDark:hover {
+  box-shadow: -5px 5px 10px rgba(35, 39, 42, 0.2), 5px -5px 10px rgba(35, 39, 42, 0.2), -5px -5px 10px rgba(67, 73, 80, 0.9), 5px 5px 13px rgba(35, 39, 42, 0.9), inset 1px 1px 2px rgba(67, 73, 80, 0.3), inset -1px -1px 2px rgba(35, 39, 42, 0.5);
+}
+
+.rounded, .navbarBtnDark, .navbarBtn {
+  border-radius: 999px;
+}
+
+.navbarBtn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.navbarBtn svg {
+  width: 30px;
+  height: 30px;
+}
+.navbarBtnDark {
+  width: 50px;
+  height: 50px;
+}
+.navbarBtnActive, .navbarBtnActiveDark {
+  padding: 0 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  background: #f4f4f4;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
+  font-family: "Nasalization", "Satoshi", sans-serif;
+  color: #de1149;
+}
+.navbarBtnActive svg, .navbarBtnActiveDark svg {
+  margin-right: 10px;
+}
+.navbarBtnActiveDark {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+.navbarBtnActiveDark:hover {
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+
+.input, .inputDark {
+  height: 50px;
+  line-height: 50px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px;
+  background: #f4f4f4;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
+  transition: all 300ms ease-in-out;
+}
+.input:focus, .inputDark:focus {
+  outline: none;
+  box-shadow: -5px 5px 10px rgba(202, 202, 202, 0.2), 5px -5px 10px rgba(202, 202, 202, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(202, 202, 202, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(202, 202, 202, 0.5);
+  transition: all 300ms ease-in-out;
+}
+
+.inputDark {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+  color: #f9f9f9;
+}
+.inputDark:focus {
+  outline: none;
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}

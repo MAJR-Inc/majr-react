@@ -1,0 +1,120 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap");
+@font-face {
+  font-family: "Nasalization";
+  src: url("https://tdm.ar/nasalization-rg-webfont.ttf");
+  font-display: swap;
+}
+.flatLight {
+  border-radius: 12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+  box-shadow: -33px 33px 66px rgba(224, 224, 224, 0.2), 33px -33px 66px rgba(224, 224, 224, 0.2), -33px -33px 66px rgba(255, 255, 255, 0.9), 33px 33px 83px rgba(224, 224, 224, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(224, 224, 224, 0.5);
+}
+.flatLight > h1, .flatLight > h2, .flatLight > h3, .flatLight > h4, .flatLight > p {
+  text-align: center;
+}
+
+.inputLight {
+  background: #f9f9f9;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(204, 204, 204, 0.5), inset -5px 5px 10px rgba(204, 204, 204, 0.2), inset 5px -5px 10px rgba(204, 204, 204, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(204, 204, 204, 0.9);
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 20px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  transition: all 300ms ease-in-out;
+  /* hide arrows
+  Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+.inputLight:hover, .inputLight:focus {
+  transition: all 300ms ease-in-out;
+  outline: none;
+  box-shadow: -5px 5px 10px rgba(204, 204, 204, 0.2), 5px -5px 10px rgba(204, 204, 204, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(204, 204, 204, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(204, 204, 204, 0.5);
+}
+.inputLight::-webkit-outer-spin-button, .inputLight::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+.inputLight[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+.button, .buttonSecondary, .buttonMain {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
+  box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
+  border: none;
+  color: #32383d;
+}
+.button:hover, .buttonSecondary:hover, .buttonMain:hover {
+  transition: all 300ms ease-in-out;
+  box-shadow: -5px 5px 10px rgba(195, 195, 195, 0.2), 5px -5px 10px rgba(195, 195, 195, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(195, 195, 195, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(195, 195, 195, 0.5);
+}
+.buttonMain {
+  background: linear-gradient(135deg, #e9124d 0%, #d31045 100%);
+  border: none;
+  box-shadow: -2px 2px 4px rgba(200, 15, 66, 0.2), 2px -2px 4px rgba(200, 15, 66, 0.2), -2px -2px 4px rgba(244, 19, 80, 0.9), 2px 2px 5px rgba(200, 15, 66, 0.9), inset 1px 1px 2px rgba(244, 19, 80, 0.3), inset -1px -1px 2px rgba(200, 15, 66, 0.5);
+  color: #f9f9f9;
+}
+.buttonMain:hover {
+  box-shadow: -5px 5px 10px rgba(200, 15, 66, 0.2), 5px -5px 10px rgba(200, 15, 66, 0.2), -5px -5px 10px rgba(244, 19, 80, 0.9), 5px 5px 13px rgba(200, 15, 66, 0.9), inset 1px 1px 2px rgba(244, 19, 80, 0.3), inset -1px -1px 2px rgba(200, 15, 66, 0.5);
+}
+.buttonSecondary {
+  color: #f9f9f9;
+  background: linear-gradient(135deg, #3b3b3e 0%, #353538 100%);
+  box-shadow: -2px 2px 4px rgba(50, 50, 53, 0.2), 2px -2px 4px rgba(50, 50, 53, 0.2), -2px -2px 4px rgba(62, 62, 65, 0.9), 2px 2px 5px rgba(50, 50, 53, 0.9), inset 1px 1px 2px rgba(62, 62, 65, 0.3), inset -1px -1px 2px rgba(50, 50, 53, 0.5);
+  border-radius: 12px;
+}
+
+.link {
+  text-align: right;
+  color: #de1149;
+  padding: 3px 10px;
+  font-family: "Satoshi";
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.link:hover {
+  color: #de1149;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #de1149;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.link:hover, .link:focus {
+  outline: none;
+}
+.link:hover, .link:focus, .link:active {
+  color: #de1149;
+}
