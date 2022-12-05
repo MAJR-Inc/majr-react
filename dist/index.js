@@ -1,6 +1,6 @@
 var React = require('react');
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","input":"_styles-module__input__2IYfc","inputDark":"_styles-module__inputDark__2johG"};
+var styles = {"flat-light":"_37uGn","inputLight":"_5gfdI","button":"_2hTXI","buttonDark":"_2kUFE","buttonSecondary":"_1Gipg","buttonMain":"_1iiPs","linkAnimated":"_vrVpH","link":"_71S8l","iconButton":"_2570K","navbarBtnActive":"_1W0H_","navbarBtnActiveDark":"_9TPHE","navbarBtn":"_2gBhj","iconButtonDark":"_1vMvm","navbarBtnDark":"_1_LN9","rounded":"_3gdqJ","input":"_2IYfc","inputDark":"_2johG"};
 
 var Button = function Button(_ref) {
   var text = _ref.text,

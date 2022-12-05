@@ -15,13 +15,15 @@ npm install --save majr-react
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'majr-react'
+import { Button } from 'majr-react'
 import 'majr-react/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default function Home(){
+  return (
+    <section>
+      <Button onClick={() => {}} text='Main btn' variant='main' />
+    </section>
+  )
 }
 ```
 
