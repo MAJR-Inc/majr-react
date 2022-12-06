@@ -3,14 +3,20 @@ import React from 'react'
 import {
   Button,
   Checkbox,
+  FooterButton,
   IconButton,
+  Image,
   Input,
   Link,
   NavbarBtn,
+  Profile,
+  Progress,
   Radio,
   Select,
   Spotlight,
-  Textarea
+  SwitchComponent,
+  Textarea,
+  ThemeSwitch
 } from 'majr-react'
 import 'majr-react/dist/index.css'
 
@@ -80,18 +86,14 @@ const App = () => {
     })
   }, [theme])
   const [username, setUsername] = React.useState('')
-  const [radio, setRadio] = React.useState<boolean[]>([false, true, false])
   const [radio2, setRadio2] = React.useState<boolean[]>([false, true, false])
+  const [switchValue, setSwitchValue] = React.useState(false)
   const [checkbox, setCheckbox] = React.useState<boolean[]>([
     false,
     false,
     false
   ])
-  const [checkbox2, setCheckbox2] = React.useState<boolean[]>([
-    false,
-    false,
-    false
-  ])
+
   const [spotlight, setSpotlight] = React.useState(false)
   const [select, setSelect] = React.useState(-1)
   return (
@@ -107,120 +109,110 @@ const App = () => {
     >
       <Button onClick={() => {}} text='Main btn' variant='main' />
       <br />
-      <Button onClick={() => {}} text='Dark btn' variant='dark' />
-      <br />
-      <Button onClick={() => {}} text='Light btn' />
+      <Button
+        onClick={() => {}}
+        text='Light btn'
+        variant={theme ? 'dark' : 'light'}
+      />
       <br />
       <Link text='Link - Def.' link='https://github.com' />
       <Link text='Animated' link='https://github.com' variant='animated' />
       <br />
-      <IconButton onClick={() => {}} icon={tg} variant='light' />
-      <br />
-      <IconButton onClick={() => {}} icon={tg} variant='dark' />
-      <br />
-      <IconButton onClick={() => {}} icon={tg} variant='light' rounded={true} />
-      <br />
-      <NavbarBtn
+      <IconButton
         onClick={() => {}}
-        icon={award}
-        text='Navbar btn'
-        variant='light'
+        icon={tg}
+        variant={theme ? 'dark' : 'light'}
+      />
+      <br />
+      <br />
+      <IconButton
+        onClick={() => {}}
+        icon={tg}
+        variant={theme ? 'dark' : 'light'}
+        rounded={true}
       />
       <br />
       <NavbarBtn
         onClick={() => {}}
         icon={award}
         text='Navbar btn'
-        variant='dark'
+        variant={theme ? 'dark' : 'light'}
       />
       <br />
       <NavbarBtn
         onClick={() => {}}
         icon={award}
         text='Navbar btn'
-        variant='active'
-      />
-      <br />
-      <NavbarBtn
-        onClick={() => {}}
-        icon={award}
-        text='Navbar btn'
-        variant='activeDark'
+        variant={theme ? 'activeDark' : 'active'}
       />
       <br />
       <Input
         text={username}
         setText={setUsername}
         placeholder='Enter username'
-        variant='light'
-      />
-      <Input
-        text={username}
-        setText={setUsername}
-        placeholder='Enter username'
-        variant='dark'
+        variant={theme ? 'dark' : 'light'}
       />
       <Input
         text={username}
         setText={setUsername}
         placeholder='Enter password'
-        variant='password'
-      />
-      <Input
-        text={username}
-        setText={setUsername}
-        placeholder='Enter password'
-        variant='passwordDark'
+        variant={theme ? 'passwordDark' : 'password'}
       />
       <Input
         text={username}
         setText={setUsername}
         placeholder='Search...'
-        variant='searchDark'
+        variant={theme ? 'searchDark' : 'search'}
       />
-      <Textarea text={username} setText={setUsername} placeholder='Search...' />
       <Textarea
         text={username}
         setText={setUsername}
-        placeholder='Search...'
-        variant='dark'
+        placeholder='Enter text...'
+        variant={theme ? 'dark' : 'light'}
       />
       <br />
-      <Radio radio={radio} setRadio={setRadio} index={0} />
-      <Radio radio={radio} setRadio={setRadio} index={1} />
-      <Radio radio={radio} setRadio={setRadio} index={2} />
-      <br />
-      <Radio radio={radio2} setRadio={setRadio2} index={0} variant='dark' />
-      <Radio radio={radio2} setRadio={setRadio2} index={1} variant='dark' />
-      <Radio radio={radio2} setRadio={setRadio2} index={2} variant='dark' />
-      <br />
-      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={0} />
-      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={1} />
-      <Checkbox checkbox={checkbox} setCheckbox={setCheckbox} index={2} />
-      <br />
-      <Checkbox
-        checkbox={checkbox2}
-        setCheckbox={setCheckbox2}
+      <Radio
+        radio={radio2}
+        setRadio={setRadio2}
         index={0}
-        variant='dark'
+        variant={theme ? 'dark' : 'light'}
       />
-      <Checkbox
-        checkbox={checkbox2}
-        setCheckbox={setCheckbox2}
+      <Radio
+        radio={radio2}
+        setRadio={setRadio2}
         index={1}
-        variant='dark'
+        variant={theme ? 'dark' : 'light'}
+      />
+      <Radio
+        radio={radio2}
+        setRadio={setRadio2}
+        index={2}
+        variant={theme ? 'dark' : 'light'}
+      />
+      <br />
+      <Checkbox
+        checkbox={checkbox}
+        setCheckbox={setCheckbox}
+        index={0}
+        variant={theme ? 'dark' : 'light'}
       />
       <Checkbox
-        checkbox={checkbox2}
-        setCheckbox={setCheckbox2}
+        checkbox={checkbox}
+        setCheckbox={setCheckbox}
+        index={1}
+        variant={theme ? 'dark' : 'light'}
+      />
+      <Checkbox
+        checkbox={checkbox}
+        setCheckbox={setCheckbox}
         index={2}
-        variant='dark'
+        variant={theme ? 'dark' : 'light'}
       />
       <br />
       <Spotlight
         clicked={spotlight}
         setClicked={setSpotlight}
-        variant='light'
+        variant={theme ? 'dark' : 'light'}
       />
       <Spotlight clicked={spotlight} setClicked={setSpotlight} variant='dark' />
       <br />
@@ -228,12 +220,85 @@ const App = () => {
         select={['Option 1', 'Option 2', 'Option 3', 'Option 4']}
         setSelect={setSelect}
         def='Select an option'
+        variant={theme ? 'dark' : 'light'}
       />
-      <Select
-        select={['Option 1', 'Option 2', 'Option 3', 'Option 4']}
-        setSelect={setSelect}
-        def='Select an option'
-        variant='dark'
+      <br />
+      <ThemeSwitch value={theme} setSwitch={setTheme} />
+      <div
+        style={{
+          height: '60px',
+          width: '500px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          margin: '20px auto',
+          overflow: 'hidden'
+        }}
+      >
+        <FooterButton
+          onClick={() => {}}
+          text='Footer'
+          variant={theme ? 'dark' : 'light'}
+        />
+        <FooterButton
+          onClick={() => {}}
+          text='Footer'
+          variant={theme ? 'dark' : 'light'}
+        />
+        <FooterButton
+          onClick={() => {}}
+          text='Footer'
+          variant={theme ? 'dark' : 'light'}
+        />
+      </div>
+      <div
+        style={{
+          height: '60px',
+          width: '300px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          margin: '20px auto'
+        }}
+      >
+        <Profile
+          url='https://avatars.githubusercontent.com/u/56499359?v=4'
+          alt='Profile'
+          size='lg'
+          variant={theme ? 'dark' : 'light'}
+        />
+        <Profile
+          url='https://avatars.githubusercontent.com/u/56499359?v=4'
+          alt='Profile'
+          size='md'
+          variant={theme ? 'dark' : 'light'}
+        />
+        <Profile
+          url='https://avatars.githubusercontent.com/u/56499359?v=4'
+          alt='Profile'
+          size='sm'
+          variant={theme ? 'dark' : 'light'}
+        />
+      </div>
+      <Image
+        url='https://avatars.githubusercontent.com/u/56499359?v=4'
+        alt='Profile'
+        width={200}
+        height={50}
+        variant={theme ? 'dark' : 'light'}
+      />
+      <br />
+      <SwitchComponent
+        value={switchValue}
+        setSwitch={setSwitchValue}
+        variant={theme ? 'dark' : 'light'}
+      />
+      <br />
+      <Progress
+        value={3}
+        max={5}
+        variant={theme ? 'dark' : 'light'}
+        width="100px"
       />
     </section>
   )

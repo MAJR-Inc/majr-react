@@ -1,6 +1,6 @@
 var React = require('react');
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V"};
+var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb"};
 
 var Button = function Button(_ref) {
   var text = _ref.text,
@@ -307,14 +307,167 @@ var Select = function Select(_ref) {
   })));
 };
 
+var ThemeSwitch = function ThemeSwitch(_ref) {
+  var value = _ref.value,
+    setSwitch = _ref.setSwitch;
+  return React.createElement("div", {
+    className: "" + (!value ? styles["switch"] : styles.switchDark),
+    onClick: function onClick() {
+      return setSwitch(!value);
+    }
+  }, React.createElement("div", {
+    className: !value ? styles.switch__innerActive : styles.switch__inner
+  }, React.createElement("svg", {
+    width: '19',
+    height: '19',
+    viewBox: '0 0 19 19',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("path", {
+    d: 'M9.4612 12.6924C11.1605 12.6924 12.5381 11.3148 12.5381 9.6155C12.5381 7.91616 11.1605 6.53857 9.4612 6.53857C7.76186 6.53857 6.38428 7.91616 6.38428 9.6155C6.38428 11.3148 7.76186 12.6924 9.4612 12.6924Z',
+    stroke: '#f9f9f9',
+    strokeWidth: '2',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }), React.createElement("path", {
+    d: 'M2.53821 9.61558H3.30744M9.46128 2.6925V3.46174M15.6151 9.61558H16.3844M9.46128 15.7694V16.5387M4.53821 4.6925L5.07667 5.23097M14.3844 4.6925L13.8459 5.23097M13.8459 14.0002L14.3844 14.5387M5.07667 14.0002L4.53821 14.5387',
+    stroke: '#f9f9f9',
+    strokeWidth: '2',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }))), React.createElement("div", {
+    className: value ? styles.switch__innerActive : styles.switch__inner
+  }, React.createElement("svg", {
+    width: '20',
+    height: '19',
+    viewBox: '0 0 20 19',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("path", {
+    d: 'M9.92312 2.69243C10.0247 2.69243 10.1254 2.69243 10.2254 2.69243C9.23722 3.61067 8.60203 4.84616 8.43026 6.18414C8.25849 7.52212 8.56101 8.878 9.28522 10.0161C10.0094 11.1541 11.1096 12.0025 12.3943 12.4136C13.6791 12.8247 15.0674 12.7725 16.3177 12.2663C15.8368 13.4236 15.0506 14.4286 14.0433 15.1742C13.0359 15.9197 11.845 16.3778 10.5977 16.4997C9.35032 16.6215 8.09332 16.4024 6.96072 15.8658C5.82813 15.3292 4.86243 14.4953 4.16665 13.4529C3.47086 12.4105 3.07108 11.1988 3.00995 9.94703C2.94882 8.69525 3.22864 7.45035 3.81955 6.34514C4.41047 5.23992 5.29032 4.31584 6.36524 3.67146C7.44017 3.02708 8.66985 2.68658 9.92312 2.68628V2.69243Z',
+    stroke: !value ? '#171717' : '#f9f9f9',
+    strokeWidth: '2',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }))));
+};
+var SwitchComponent = function SwitchComponent(_ref2) {
+  var value = _ref2.value,
+    setSwitch = _ref2.setSwitch,
+    variant = _ref2.variant;
+  return React.createElement("div", {
+    className: "" + (variant === 'light' ? styles.switch2 : styles.switch2Dark),
+    onClick: function onClick() {
+      return setSwitch(!value);
+    }
+  }, React.createElement("div", {
+    className: value ? styles.switch2__innerActive : styles.switch2__inner
+  }));
+};
+
+var FooterButton = function FooterButton(_ref) {
+  var variant = _ref.variant,
+    text = _ref.text,
+    onClick = _ref.onClick;
+  var classname = {
+    light: styles.footerButton,
+    dark: styles.footerButtonDark
+  };
+  return React.createElement("button", {
+    className: "" + (variant ? classname[variant] : classname.light),
+    onClick: onClick
+  }, text);
+};
+
+var Profile = function Profile(_ref) {
+  var variant = _ref.variant,
+    url = _ref.url,
+    alt = _ref.alt,
+    size = _ref.size;
+  var classname = {
+    light: styles.profile,
+    dark: styles.profileDark
+  };
+  var getSize = function getSize() {
+    var res = '30px';
+    if (size === 'md') res = '50px';
+    if (size === 'lg') res = '70px';
+    return res;
+  };
+  return React.createElement("div", {
+    className: "" + (variant ? classname[variant] : classname.light)
+  }, React.createElement("img", {
+    src: url,
+    alt: alt || 'Profile',
+    style: {
+      width: getSize(),
+      height: getSize()
+    }
+  }));
+};
+
+var Image = function Image(_ref) {
+  var variant = _ref.variant,
+    url = _ref.url,
+    alt = _ref.alt,
+    width = _ref.width,
+    height = _ref.height;
+  var classname = {
+    light: styles.image,
+    dark: styles.imageDark
+  };
+  return React.createElement("div", {
+    className: "" + (variant ? classname[variant] : classname.light)
+  }, React.createElement("img", {
+    src: url,
+    alt: alt || 'Image',
+    style: {
+      width: width + 'px',
+      height: height + 'px'
+    }
+  }));
+};
+
+var Progress = function Progress(_ref) {
+  var variant = _ref.variant,
+    value = _ref.value,
+    max = _ref.max,
+    width = _ref.width;
+  var classname = {
+    light: styles.progress,
+    dark: styles.progressDark
+  };
+  var wrapperClass = {
+    light: styles.progressWrapper,
+    dark: styles.progressWrapperDark
+  };
+  return React.createElement("div", {
+    className: "" + (variant ? wrapperClass[variant] : wrapperClass.light),
+    style: {
+      width: width
+    }
+  }, React.createElement("div", {
+    className: "" + (variant ? classname[variant] : classname.light),
+    style: {
+      width: value / max * 100 + '%'
+    }
+  }));
+};
+
 exports.Button = Button;
 exports.Checkbox = Checkbox;
+exports.FooterButton = FooterButton;
 exports.IconButton = IconButton;
+exports.Image = Image;
 exports.Input = Input;
 exports.Link = Link;
 exports.NavbarBtn = NavbarBtn;
+exports.Profile = Profile;
+exports.Progress = Progress;
 exports.Radio = Radio;
 exports.Select = Select;
 exports.Spotlight = Spotlight;
+exports.SwitchComponent = SwitchComponent;
 exports.Textarea = Textarea;
+exports.ThemeSwitch = ThemeSwitch;
 //# sourceMappingURL=index.js.map
