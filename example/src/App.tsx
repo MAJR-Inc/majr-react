@@ -1,20 +1,25 @@
 import React from 'react'
 
 import {
+  AddButton,
   Button,
   Checkbox,
   FooterButton,
   IconButton,
+  IconVerified,
   Image,
   Input,
   Link,
   NavbarBtn,
   Profile,
   Progress,
+  ProgressWDashes,
   Radio,
   Select,
   Spotlight,
+  Steps,
   SwitchComponent,
+  Tag,
   Textarea,
   ThemeSwitch
 } from 'majr-react'
@@ -227,7 +232,7 @@ const App = () => {
       <div
         style={{
           height: '60px',
-          width: '500px',
+          width: '590px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -250,6 +255,7 @@ const App = () => {
           text='Footer'
           variant={theme ? 'dark' : 'light'}
         />
+        <FooterButton onClick={() => {}} text='Twitter' variant={'twitter'} />
       </div>
       <div
         style={{
@@ -298,8 +304,31 @@ const App = () => {
         value={3}
         max={5}
         variant={theme ? 'dark' : 'light'}
-        width="100px"
+        width='100px'
       />
+      <ProgressWDashes
+        value={3}
+        max={5}
+        variant={theme ? 'dark' : 'light'}
+        width='100px'
+      />
+      <br />
+      <Tag
+        text='Metamask'
+        theme={theme ? 'dark' : 'light'}
+        icon={<IconVerified />}
+        color='#de1149'
+        onClick={() => {}}
+      />
+      <Tag
+        text='Metamask'
+        theme={theme ? 'dark' : 'light'}
+        onClick={() => {}}
+      />
+      <AddButton onClick={() => {}} />
+      <br />
+      <br />
+      <Steps current={2} total={4} variant={theme ? 'dark' : 'light'} />
     </section>
   )
 }

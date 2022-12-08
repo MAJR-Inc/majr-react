@@ -378,6 +378,7 @@
 }
 
 ._styles-module__select__options__2OWeN, ._styles-module__select__optionsDark__2fH9V {
+  cursor: pointer;
   background: #f9f9f9;
   background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
   box-shadow: -5px 5px 10px rgba(220, 220, 220, 0.2), 5px -5px 10px rgba(220, 220, 220, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(220, 220, 220, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(220, 220, 220, 0.5);
@@ -410,6 +411,7 @@
 }
 
 ._styles-module__switch__1zvwZ, ._styles-module__switchDark__204Pu {
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
@@ -442,7 +444,7 @@
   box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
 }
 
-._styles-module__footerButton__17aKo, ._styles-module__footerButtonDark__3-NH5 {
+._styles-module__footerButton__17aKo, ._styles-module__footerButtonTwitter__qpthA, ._styles-module__footerButtonDark__3-NH5 {
   height: 100%;
   width: 151px;
   cursor: pointer;
@@ -455,7 +457,7 @@
   color: #32383d;
   transition: all 300ms ease-in-out;
 }
-._styles-module__footerButton__17aKo:hover, ._styles-module__footerButtonDark__3-NH5:hover {
+._styles-module__footerButton__17aKo:hover, ._styles-module__footerButtonTwitter__qpthA:hover, ._styles-module__footerButtonDark__3-NH5:hover {
   font-weight: 900;
   transition: all 300ms ease-in-out;
   box-shadow: 8px 8px 16px rgba(221, 221, 221, 0.2), -8px -8px 16px rgba(221, 221, 221, 0.2), 8px -8px 16px rgba(255, 255, 255, 0.9), -8px 8px 20px rgba(221, 221, 221, 0.9), inset -1px 1px 2px rgba(255, 255, 255, 0.3), inset 1px -1px 2px rgba(221, 221, 221, 0.5);
@@ -560,6 +562,25 @@
   left: 0;
   transition: all 300ms ease-in-out;
 }
+._styles-module__progressWrapper__lines__f2cuS {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10 px;
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+  top: -10px;
+}
+._styles-module__progressWrapper__lines__f2cuS div {
+  width: 2px;
+  height: 8px;
+  background: url("https://tmdm.com.ar/u/dotted_lines.svg");
+  margin-left: 10px;
+}
+._styles-module__progressWrapper__lines__f2cuS div:nth-child(7) {
+  opacity: 0;
+}
 
 ._styles-module__progressWrapperDark__3Awf9 {
   background: #33383d;
@@ -567,4 +588,133 @@
 }
 ._styles-module__progressWrapperDark__3Awf9 ._styles-module__progressDark__1YQhb {
   background: #de1149;
+}
+
+._styles-module__tag__kR9pS, ._styles-module__tagDark__3ocXl {
+  box-shadow: -5px 5px 10px rgba(232, 232, 232, 0.2), 5px -5px 10px rgba(232, 232, 232, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(232, 232, 232, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(232, 232, 232, 0.5);
+  cursor: pointer;
+  padding: 5px 12px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+  color: #32383d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Satoshi", sans-serif;
+  margin: 10px 10px 10px 0;
+}
+._styles-module__tag__kR9pS svg, ._styles-module__tagDark__3ocXl svg {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+}
+._styles-module__tag__kR9pS:hover, ._styles-module__tagDark__3ocXl:hover {
+  color: #d31149 !important;
+  transform: scale(1.07);
+  transition: all 200ms ease-in-out;
+}
+
+._styles-module__tagDark__3ocXl {
+  background: #32383d;
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+._styles-module__tagDark__3ocXl:hover {
+  color: #d31149 !important;
+  transform: scale(1.07);
+  transition: all 200ms ease-in-out;
+}
+
+._styles-module__addButton__HUrcY {
+  cursor: pointer;
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: none;
+}
+._styles-module__addButton__HUrcY svg {
+  height: 17px;
+  width: 17px;
+}
+
+._styles-module__steps__tX7xC, ._styles-module__stepsDark__3hKP7 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+._styles-module__stepsBar__3G1JP, ._styles-module__stepsDark__3hKP7 ._styles-module__stepsBarDark__27qPP {
+  height: 8px;
+  width: 20vw;
+  border-radius: 9px;
+  background: #f9f9f9;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
+  margin: 0 15px;
+}
+._styles-module__stepsBarActive__3zoqI {
+  background: #de1149;
+  box-shadow: unset;
+}
+
+._styles-module__stepsNumber__i6jAu, ._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou {
+  border-radius: 999px;
+  padding: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
+}
+._styles-module__stepsNumberInner__2MjMj, ._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou ._styles-module__stepsNumberInner__2MjMj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  font-family: "Nasalization", sans-serif;
+  line-height: 30px;
+  background: #f9f9f9;
+  box-shadow: -5px 5px 10px rgba(232, 232, 232, 0.2), 5px -5px 10px rgba(232, 232, 232, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(232, 232, 232, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(232, 232, 232, 0.5);
+}
+._styles-module__stepsNumberInnerActive__2j8cR, ._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou ._styles-module__stepsNumberInnerActive__2j8cR {
+  color: #f9f9f9;
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+._styles-module__stepsDark__3hKP7 ._styles-module__stepsBarDark__27qPP {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+._styles-module__stepsDark__3hKP7 ._styles-module__stepsBarActive__3zoqI {
+  background: #de1149;
+  box-shadow: unset;
+}
+._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou {
+  background: #33383d;
+  box-shadow: 1px 1px 2px rgba(61, 67, 73, 0.3), -1px -1px 2px rgba(41, 45, 49, 0.5), inset -5px 5px 10px rgba(41, 45, 49, 0.2), inset 5px -5px 10px rgba(41, 45, 49, 0.2), inset -5px -5px 10px rgba(61, 67, 73, 0.9), inset 5px 5px 13px rgba(41, 45, 49, 0.9);
+}
+._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou ._styles-module__stepsNumberInner__2MjMj {
+  background: #33383d;
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+  color: #f9f9f9;
+}
+._styles-module__stepsDark__3hKP7 ._styles-module__stepsNumberDark__3Y_ou ._styles-module__stepsNumberInnerActive__2j8cR {
+  background: #de1149;
+  box-shadow: -5px 5px 10px rgba(180, 14, 59, 0.2), 5px -5px 10px rgba(180, 14, 59, 0.2), -5px -5px 10px rgba(255, 20, 87, 0.9), 5px 5px 13px rgba(180, 14, 59, 0.9), inset 1px 1px 2px rgba(255, 20, 87, 0.3), inset -1px -1px 2px rgba(180, 14, 59, 0.5);
+}
+
+._styles-module__footerButtonTwitter__qpthA {
+  background: #00acee;
+  width: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 1px 2px rgba(0, 160, 221, 0.2), 1px -1px 2px rgba(0, 160, 221, 0.2), -1px -1px 2px rgba(0, 184, 255, 0.9), 1px 1px 3px rgba(0, 160, 221, 0.9), inset 1px 1px 2px rgba(0, 184, 255, 0.3), inset -1px -1px 2px rgba(0, 160, 221, 0.5);
+}
+._styles-module__footerButtonTwitter__qpthA:hover {
+  box-shadow: unset;
 }

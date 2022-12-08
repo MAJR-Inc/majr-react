@@ -12,7 +12,13 @@ import { ThemeSwitch, SwitchComponent } from './Components/Switch'
 import { FooterButton } from './Components/FooterButton'
 import { Profile } from './Components/Profile'
 import { Image } from './Components/Image'
-import { Progress } from './Components/Progress'
+import { Progress, ProgressWDashes } from './Components/Progress'
+import { Tag } from './Components/Tag'
+import { AddButton } from './Components/AddButton'
+import { IconVerified } from './Components/IconVerified'
+import { IconCompatible } from './Components/IconCompatible'
+import { IconReport } from './Components/IconTriangle'
+import { Steps, StepsBar, StepsNumber } from './Components/Steps'
 
 export {
   Button,
@@ -30,5 +36,14 @@ export {
   Profile,
   Image,
   SwitchComponent,
-  Progress
+  Progress,
+  ProgressWDashes,
+  Tag,
+  AddButton,
+  IconVerified,
+  IconCompatible,
+  IconReport,
+  Steps,
+  StepsBar,
+  StepsNumber
 }

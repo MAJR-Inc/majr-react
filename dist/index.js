@@ -1,6 +1,6 @@
 var React = require('react');
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb"};
+var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR"};
 
 var Button = function Button(_ref) {
   var text = _ref.text,
@@ -371,12 +371,26 @@ var FooterButton = function FooterButton(_ref) {
     onClick = _ref.onClick;
   var classname = {
     light: styles.footerButton,
-    dark: styles.footerButtonDark
+    dark: styles.footerButtonDark,
+    twitter: styles.footerButtonTwitter
   };
   return React.createElement("button", {
     className: "" + (variant ? classname[variant] : classname.light),
     onClick: onClick
-  }, text);
+  }, variant !== 'twitter' ? text : React.createElement("svg", {
+    width: '18',
+    height: '15',
+    viewBox: '0 0 18 15',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("path", {
+    d: 'M16.4715 1.58279C15.7229 1.94959 14.9893 2.09856 14.2258 2.32388C13.3866 1.37693 12.1425 1.32453 10.947 1.77218C9.75153 2.21983 8.96852 3.31424 8.98574 4.5696V5.31818C6.55662 5.38031 4.39324 4.27392 2.99715 2.32388C2.99715 2.32388 -0.133389 7.88803 5.99144 10.5582C4.59011 11.4917 3.19253 12.1212 1.5 12.0553C3.97628 13.405 6.67489 13.8691 9.01119 13.1909C11.6911 12.4124 13.8934 10.404 14.7385 7.39547C14.9906 6.48046 15.1158 5.53516 15.1106 4.58607C15.1091 4.39968 16.2409 2.51102 16.4715 1.58204V1.58279Z',
+    fill: 'white',
+    stroke: 'white',
+    strokeWidth: '2',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  })));
 };
 
 var Profile = function Profile(_ref) {
@@ -453,21 +467,210 @@ var Progress = function Progress(_ref) {
     }
   }));
 };
+var ProgressWDashes = function ProgressWDashes(_ref2) {
+  var variant = _ref2.variant,
+    value = _ref2.value,
+    max = _ref2.max,
+    width = _ref2.width;
+  var classname = {
+    light: styles.progress,
+    dark: styles.progressDark
+  };
+  var wrapperClass = {
+    light: styles.progressWrapper,
+    dark: styles.progressWrapperDark
+  };
+  return React.createElement("div", {
+    className: "" + (variant ? wrapperClass[variant] : wrapperClass.light),
+    style: {
+      width: width
+    }
+  }, React.createElement("div", {
+    className: "" + (variant ? classname[variant] : classname.light),
+    style: {
+      width: value / max * 100 + '%'
+    }
+  }), React.createElement("section", {
+    className: styles.progressWrapper__lines
+  }, [].concat(Array(7)).map(function (_, i) {
+    return React.createElement("div", {
+      key: i
+    });
+  })));
+};
 
+var Tag = function Tag(_ref) {
+  var theme = _ref.theme,
+    icon = _ref.icon,
+    text = _ref.text,
+    onClick = _ref.onClick,
+    color = _ref.color;
+  var classname = {
+    light: styles.tag,
+    dark: styles.tagDark
+  };
+  if (!color) color = theme === 'dark' ? '#f9f9f9' : '#171717';
+  return React.createElement("button", {
+    className: "" + (theme ? classname[theme] : classname.light),
+    onClick: onClick,
+    style: {
+      color: color
+    }
+  }, text, icon || null);
+};
+
+var AddButton = function AddButton(_ref) {
+  var onClick = _ref.onClick;
+  return React.createElement("button", {
+    className: styles.addButton,
+    onClick: onClick
+  }, React.createElement("svg", {
+    width: '17',
+    height: '17',
+    viewBox: '0 0 17 17',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("g", {
+    clipPath: 'url(#clip0_229_730)'
+  }, React.createElement("path", {
+    fillRule: 'evenodd',
+    clipRule: 'evenodd',
+    d: 'M9.5 3.54175C9.5 2.98946 9.05228 2.54175 8.5 2.54175C7.94772 2.54175 7.5 2.98946 7.5 3.54175V7.5H3.54199C2.98971 7.5 2.54199 7.94772 2.54199 8.5C2.54199 9.05228 2.98971 9.5 3.54199 9.5H7.5V13.4584C7.5 14.0107 7.94772 14.4584 8.5 14.4584C9.05228 14.4584 9.5 14.0107 9.5 13.4584V9.5H13.4587C14.0109 9.5 14.4587 9.05228 14.4587 8.5C14.4587 7.94772 14.0109 7.5 13.4587 7.5H9.5V3.54175Z',
+    fill: '#F9F9F9'
+  })), React.createElement("defs", null, React.createElement("clipPath", {
+    id: 'clip0_229_730'
+  }, React.createElement("rect", {
+    width: '17',
+    height: '17',
+    fill: 'white'
+  })))));
+};
+
+var IconVerified = function IconVerified() {
+  return React.createElement("svg", {
+    width: '12',
+    height: '12',
+    viewBox: '0 0 12 12',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("g", {
+    clipPath: 'url(#clip0_2_944)'
+  }, React.createElement("path", {
+    d: 'M3.13635 6L5.45453 8.5L10.0909 3.5',
+    stroke: '#DE1149',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  })), React.createElement("defs", null, React.createElement("clipPath", {
+    id: 'clip0_2_944'
+  }, React.createElement("rect", {
+    width: '11.1273',
+    height: '12',
+    fill: 'white',
+    transform: 'translate(0.818176)'
+  }))));
+};
+
+var IconCompatible = function IconCompatible() {
+  return React.createElement("svg", {
+    width: '12',
+    height: '11',
+    viewBox: '0 0 12 11',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("path", {
+    d: 'M5.9965 8.874L2.9105 10.4965L3.5 7.06L1 4.6265L4.45 4.1265L5.993 1L7.536 4.1265L10.986 4.6265L8.486 7.06L9.0755 10.4965L5.9965 8.874Z',
+    stroke: '#009410',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }));
+};
+
+var IconReport = function IconReport() {
+  return React.createElement("svg", {
+    width: '11',
+    height: '10',
+    viewBox: '0 0 11 10',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, React.createElement("path", {
+    d: 'M5.50351 4.01587V5.01587M5.50351 7.01587V7.02087',
+    stroke: '#FCCA46',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }), React.createElement("path", {
+    d: 'M2.00351 9.01588H9.00351C9.16667 9.01473 9.32706 8.97369 9.47071 8.89631C9.61435 8.81894 9.73689 8.7076 9.82762 8.572C9.91835 8.43639 9.97452 8.28065 9.99124 8.11835C10.008 7.95605 9.9847 7.79213 9.92351 7.64088L6.37351 1.51588C6.28703 1.35958 6.16027 1.22929 6.00639 1.13857C5.85251 1.04785 5.67714 1 5.49851 1C5.31988 1 5.14451 1.04785 4.99064 1.13857C4.83676 1.22929 4.70999 1.35958 4.62351 1.51588L1.07351 7.64088C1.01348 7.78866 0.98968 7.94867 1.00409 8.10753C1.0185 8.26639 1.0707 8.4195 1.15634 8.55408C1.24198 8.68866 1.35857 8.80079 1.49638 8.88113C1.63418 8.96146 1.78921 9.00766 1.94851 9.01588',
+    stroke: '#FCCA46',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }));
+};
+
+var StepsBar = function StepsBar(_ref) {
+  var active = _ref.active,
+    theme = _ref.theme;
+  return React.createElement("div", {
+    className: (theme === 'dark' ? styles.stepsBarDark : styles.stepsBar) + " " + (active ? styles.stepsBarActive : '')
+  });
+};
+var StepsNumber = function StepsNumber(_ref2) {
+  var number = _ref2.number,
+    active = _ref2.active,
+    theme = _ref2.theme;
+  return React.createElement("div", {
+    className: (theme === 'dark' ? styles.stepsNumberDark : styles.stepsNumber) + " "
+  }, React.createElement("div", {
+    className: styles.stepsNumberInner + " " + (active ? styles.stepsNumberInnerActive : '')
+  }, number));
+};
+var Steps = function Steps(_ref3) {
+  var current = _ref3.current,
+    total = _ref3.total,
+    variant = _ref3.variant;
+  return React.createElement("div", {
+    className: variant === 'dark' ? styles.stepsDark : styles.steps
+  }, React.createElement(StepsBar, {
+    active: current > 0,
+    theme: variant
+  }), Array.from(Array(total).keys()).map(function (step) {
+    return React.createElement(React.Fragment, {
+      key: step
+    }, React.createElement(StepsNumber, {
+      number: step + 1,
+      active: current >= step + 1,
+      theme: variant
+    }), step < total - 1 && React.createElement(StepsBar, {
+      active: current > step + 1,
+      theme: variant
+    }));
+  }), React.createElement(StepsBar, {
+    active: false,
+    theme: variant
+  }));
+};
+
+exports.AddButton = AddButton;
 exports.Button = Button;
 exports.Checkbox = Checkbox;
 exports.FooterButton = FooterButton;
 exports.IconButton = IconButton;
+exports.IconCompatible = IconCompatible;
+exports.IconReport = IconReport;
+exports.IconVerified = IconVerified;
 exports.Image = Image;
 exports.Input = Input;
 exports.Link = Link;
 exports.NavbarBtn = NavbarBtn;
 exports.Profile = Profile;
 exports.Progress = Progress;
+exports.ProgressWDashes = ProgressWDashes;
 exports.Radio = Radio;
 exports.Select = Select;
 exports.Spotlight = Spotlight;
+exports.Steps = Steps;
+exports.StepsBar = StepsBar;
+exports.StepsNumber = StepsNumber;
 exports.SwitchComponent = SwitchComponent;
+exports.Tag = Tag;
 exports.Textarea = Textarea;
 exports.ThemeSwitch = ThemeSwitch;
 //# sourceMappingURL=index.js.map
