@@ -349,7 +349,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 106px;
-  height: 50px;
+  height: 40px;
   padding: 9px;
   border-radius: 12px;
   background: $bg;
@@ -699,5 +699,153 @@
     inset -1px -1px 2px rgba(0, 160, 221, 0.5);
   &:hover {
     box-shadow: unset;
+  }
+}
+
+.flatBox {
+  background: $bg;
+  box-shadow: $light-flat;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  &Dark {
+    @extend .flatBox;
+    background: $input-dark;
+    box-shadow: $dark-flat;
+  }
+}
+
+.navbarLight {
+  width: calc(100vw - 80px);
+  height: 70px;
+  background: rgba($bg, 0.3);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  section:nth-child(1) {
+    svg {
+      display: none;
+    }
+  }
+  section:nth-child(2) {
+    display: flex;
+  }
+  section:nth-child(3),
+  section:nth-child(4) {
+    display: none;
+  }
+  section {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      margin-left: 30px;
+    }
+    h2 {
+      font-family: 'Nasalization', sans-serif;
+      font-size: 1.5rem;
+      margin: -3px 0 0 0;
+      color: $sec;
+      b {
+        color: $main;
+      }
+    }
+  }
+}
+
+.navbarDark {
+  @extend .navbarLight;
+  background: rgba($sec, 0.3);
+  backdrop-filter: blur(10px);
+  section {
+    h2 {
+      color: $bg;
+    }
+  }
+}
+
+.footer {
+  width: calc(100% - 80px);
+  height: 59px;
+  background: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  section {
+    height: 59px;
+    button {
+      margin-right: 20px;
+    }
+  }
+}
+.footerDark {
+  @extend .footer;
+  background: $sec;
+  section {
+    button {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbarLight {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    section:nth-child(1) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      svg {
+        cursor: pointer;
+        display: block;
+      }
+    }
+    section:nth-child(2) {
+      display: none;
+    }
+    section:nth-child(4) {
+      margin-top: 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    section {
+      height: fit-content;
+      padding: 20px 0;
+      button {
+        width: calc(100vw / 40px);
+        margin: 5px 0;
+        height: 40px;
+      }
+    }
   }
 }

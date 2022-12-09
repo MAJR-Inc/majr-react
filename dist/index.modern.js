@@ -1,6 +1,6 @@
 import { createElement, useState, Fragment } from 'react';
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","linkDark":"_styles-module__linkDark__toeZN","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR"};
+var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonDark":"_styles-module__buttonDark__2kUFE","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","linkDark":"_styles-module__linkDark__toeZN","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR","flatBox":"_styles-module__flatBox__1J_Qp","flatBoxDark":"_styles-module__flatBoxDark__3aasJ","navbarLight":"_styles-module__navbarLight__2o0Ql","navbarDark":"_styles-module__navbarDark__eP6C_","footer":"_styles-module__footer__24OKz","footerDark":"_styles-module__footerDark__1PLfW"};
 
 const Button = ({
   text,
@@ -622,5 +622,126 @@ const Steps = ({
   }));
 };
 
-export { AddButton, Button, Checkbox, FooterButton, IconButton, IconCompatible, IconReport, IconVerified, Image, Input, Link, NavbarBtn, Profile, Progress, ProgressWDashes, Radio, Select, Spotlight, Steps, StepsBar, StepsNumber, SwitchComponent, Tag, Textarea, ThemeSwitch };
+const FlatBox = ({
+  variant,
+  width,
+  height,
+  children
+}) => {
+  const classname = {
+    light: styles.flatBox,
+    dark: styles.flatBoxDark
+  };
+  return createElement("div", {
+    className: `${variant ? classname[variant] : classname.light}`,
+    style: {
+      width: width,
+      height: height
+    }
+  }, children);
+};
+
+const Navbar = ({
+  theme,
+  variant,
+  buttons,
+  setTheme
+}) => {
+  const [open, setOpen] = useState(false);
+  const NavbarContent = () => createElement("section", null, variant === 'theme' ? createElement(ThemeSwitch, {
+    value: theme,
+    setSwitch: setTheme
+  }) : variant === 'buttons' ? buttons === null || buttons === void 0 ? void 0 : buttons.map((button, index) => createElement(Button, {
+    key: index,
+    text: button[0],
+    onClick: () => {
+      var _window;
+      return (_window = window) === null || _window === void 0 ? void 0 : _window.open(button[1], '_blank', 'noopener,noreferrer');
+    },
+    variant: theme ? 'dark' : 'light'
+  })) : null);
+  return createElement("nav", {
+    className: `${theme ? styles.navbarDark : styles.navbarLight}`
+  }, createElement("section", null, createElement("h2", null, "MAJR ", createElement("b", null, "DAO")), !open ? createElement("svg", {
+    onClick: () => setOpen(!open),
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: '24',
+    height: '24',
+    viewBox: '0 0 24 24',
+    strokeWidth: '2',
+    stroke: theme ? '#f9f9f9' : '#171717',
+    fill: 'none',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }, createElement("path", {
+    stroke: 'none',
+    d: 'M0 0h24v24H0z',
+    fill: 'none'
+  }), createElement("line", {
+    x1: '4',
+    y1: '6',
+    x2: '20',
+    y2: '6'
+  }), createElement("line", {
+    x1: '4',
+    y1: '12',
+    x2: '20',
+    y2: '12'
+  }), createElement("line", {
+    x1: '4',
+    y1: '18',
+    x2: '20',
+    y2: '18'
+  })) : createElement("svg", {
+    onClick: () => setOpen(!open),
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: '24',
+    height: '24',
+    viewBox: '0 0 24 24',
+    strokeWidth: '2',
+    stroke: theme ? '#f9f9f9' : '#171717',
+    fill: 'none',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }, createElement("path", {
+    stroke: 'none',
+    d: 'M0 0h24v24H0z',
+    fill: 'none'
+  }), createElement("line", {
+    x1: '18',
+    y1: '6',
+    x2: '6',
+    y2: '18'
+  }), createElement("line", {
+    x1: '6',
+    y1: '6',
+    x2: '18',
+    y2: '18'
+  }))), createElement(NavbarContent, null), open && createElement("section", null), open ? createElement(NavbarContent, null) : null);
+};
+
+const Footer = ({
+  variant,
+  links,
+  twitter
+}) => {
+  const classname = {
+    light: styles.footer,
+    dark: styles.footerDark
+  };
+  return createElement("footer", {
+    className: `${variant ? classname[variant] : classname.light}`
+  }, createElement("section", null, links.map((link, index) => createElement(FooterButton, {
+    key: index,
+    onClick: () => window.open(link[1], '_blank'),
+    text: link[0],
+    variant: variant
+  }))), createElement("section", null, twitter ? createElement(FooterButton, {
+    onClick: () => window.open(twitter, '_blank'),
+    text: 'Twitter',
+    variant: 'twitter'
+  }) : null));
+};
+
+export { AddButton, Button, Checkbox, FlatBox, Footer, FooterButton, IconButton, IconCompatible, IconReport, IconVerified, Image, Input, Link, Navbar, NavbarBtn, Profile, Progress, ProgressWDashes, Radio, Select, Spotlight, Steps, StepsBar, StepsNumber, SwitchComponent, Tag, Textarea, ThemeSwitch };
 //# sourceMappingURL=index.modern.js.map

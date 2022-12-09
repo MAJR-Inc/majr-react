@@ -19,4 +19,7 @@ import { IconVerified } from './Components/IconVerified';
 import { IconCompatible } from './Components/IconCompatible';
 import { IconReport } from './Components/IconTriangle';
 import { Steps, StepsBar, StepsNumber } from './Components/Steps';
-export { Button, Link, IconButton, NavbarBtn, Input, Textarea, Radio, Checkbox, Spotlight, Select, ThemeSwitch, FooterButton, Profile, Image, SwitchComponent, Progress, ProgressWDashes, Tag, AddButton, IconVerified, IconCompatible, IconReport, Steps, StepsBar, StepsNumber };
+import { FlatBox } from './Components/FlatBox';
+import { Navbar } from './Components/Composed/Navbar';
+import { Footer } from './Components/Composed/Footer';
+export { Button, Link, IconButton, NavbarBtn, Input, Textarea, Radio, Checkbox, Spotlight, Select, ThemeSwitch, FooterButton, Profile, Image, SwitchComponent, Progress, ProgressWDashes, Tag, AddButton, IconVerified, IconCompatible, IconReport, Steps, StepsBar, StepsNumber, FlatBox, Navbar, Footer };

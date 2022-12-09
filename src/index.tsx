@@ -19,6 +19,9 @@ import { IconVerified } from './Components/IconVerified'
 import { IconCompatible } from './Components/IconCompatible'
 import { IconReport } from './Components/IconTriangle'
 import { Steps, StepsBar, StepsNumber } from './Components/Steps'
+import { FlatBox } from './Components/FlatBox'
+import { Navbar } from './Components/Composed/Navbar'
+import { Footer } from './Components/Composed/Footer'
 
 export {
   Button,
@@ -45,5 +48,8 @@ export {
   IconReport,
   Steps,
   StepsBar,
-  StepsNumber
+  StepsNumber,
+  FlatBox,
+  Navbar,
+  Footer
 }

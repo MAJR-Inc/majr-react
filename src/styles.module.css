@@ -54,7 +54,6 @@
   font-family: "Satoshi", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  margin: 30px 0 0 0;
   cursor: pointer;
   transition: all 300ms ease-in-out;
   background: linear-gradient(135deg, #e9e9e9 0%, #ffffff 100%);
@@ -425,7 +424,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 106px;
-  height: 50px;
+  height: 40px;
   padding: 9px;
   border-radius: 12px;
   background: #f9f9f9;
@@ -734,4 +733,153 @@
 }
 .footerButtonTwitter:hover {
   box-shadow: unset;
+}
+
+.flatBox, .flatBoxDark {
+  background: #f9f9f9;
+  box-shadow: -5px 5px 10px rgba(232, 232, 232, 0.2), 5px -5px 10px rgba(232, 232, 232, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(232, 232, 232, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(232, 232, 232, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.flatBoxDark {
+  background: #33383d;
+  box-shadow: -5px 5px 10px rgba(41, 45, 49, 0.2), 5px -5px 10px rgba(41, 45, 49, 0.2), -5px -5px 10px rgba(61, 67, 73, 0.9), 5px 5px 13px rgba(41, 45, 49, 0.9), inset 1px 1px 2px rgba(61, 67, 73, 0.3), inset -1px -1px 2px rgba(41, 45, 49, 0.5);
+}
+
+.navbarLight, .navbarDark {
+  width: calc(100vw - 80px);
+  height: 70px;
+  background: rgba(249, 249, 249, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.navbarLight section:nth-child(1) svg, .navbarDark section:nth-child(1) svg {
+  display: none;
+}
+.navbarLight section:nth-child(2), .navbarDark section:nth-child(2) {
+  display: flex;
+}
+.navbarLight section:nth-child(3), .navbarDark section:nth-child(3),
+.navbarLight section:nth-child(4),
+.navbarDark section:nth-child(4) {
+  display: none;
+}
+.navbarLight section, .navbarDark section {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarLight section button, .navbarDark section button {
+  margin-left: 30px;
+}
+.navbarLight section h2, .navbarDark section h2 {
+  font-family: "Nasalization", sans-serif;
+  font-size: 1.5rem;
+  margin: -3px 0 0 0;
+  color: #32383d;
+}
+.navbarLight section h2 b, .navbarDark section h2 b {
+  color: #de1149;
+}
+
+.navbarDark {
+  background: rgba(50, 56, 61, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.navbarDark section h2 {
+  color: #f9f9f9;
+}
+
+.footer, .footerDark {
+  width: calc(100% - 80px);
+  height: 59px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+.footer section, .footerDark section {
+  height: 59px;
+}
+.footer section button, .footerDark section button {
+  margin-right: 20px;
+}
+
+.footerDark {
+  background: #32383d;
+}
+.footerDark section button {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbarLight, .navbarDark {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .navbarLight section:nth-child(1), .navbarDark section:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbarLight section:nth-child(1) svg, .navbarDark section:nth-child(1) svg {
+    cursor: pointer;
+    display: block;
+  }
+  .navbarLight section:nth-child(2), .navbarDark section:nth-child(2) {
+    display: none;
+  }
+  .navbarLight section:nth-child(4), .navbarDark section:nth-child(4) {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbarLight section:nth-child(4) button, .navbarDark section:nth-child(4) button {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer, .footerDark {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footer section, .footerDark section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .footer section button, .footerDark section button {
+    width: 100vw;
+    margin: 5px 0;
+    height: 40px;
+  }
 }

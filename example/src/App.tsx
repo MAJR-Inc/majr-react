@@ -4,6 +4,7 @@ import {
   AddButton,
   Button,
   Checkbox,
+  FlatBox,
   FooterButton,
   IconButton,
   IconVerified,
@@ -21,7 +22,9 @@ import {
   SwitchComponent,
   Tag,
   Textarea,
-  ThemeSwitch
+  ThemeSwitch,
+  Navbar,
+  Footer
 } from 'majr-react'
 import 'majr-react/dist/index.css'
 
@@ -333,6 +336,40 @@ const App = () => {
       <br />
       <br />
       <Steps current={2} total={4} variant={theme ? 'dark' : 'light'} />
+      <br />
+      <FlatBox
+        height='fit-content'
+        width='100px'
+        variant={theme ? 'dark' : 'light'}
+      >
+        <h1>Hi!</h1>
+      </FlatBox>
+      <br />
+      <br />
+      <br />
+      <h2>Composed</h2>
+      <br />
+
+      <Navbar theme={theme} variant={'theme'} setTheme={setTheme} />
+      {/* <Navbar
+        theme={theme}
+        variant={'buttons'}
+        buttons={[
+          ['Home', '/'],
+          ['About', '/about'],
+          ['Contact', '/contact']
+        ]}
+        setTheme={setTheme}
+      /> */}
+      <Footer
+        variant={theme ? 'dark' : 'light'}
+        links={[
+          ['Home', '/'],
+          ['About', '/about'],
+          ['Contact', '/contact']
+        ]}
+        twitter='https://twitter.com/MAJR_DAO'
+      />
     </section>
   )
 }
