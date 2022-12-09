@@ -120,7 +120,11 @@ const App = () => {
         variant={theme ? 'dark' : 'light'}
       />
       <br />
-      <Link text='Link - Def.' link='https://github.com' />
+      <Link
+        text='Link - Def.'
+        link='https://github.com'
+        variant={theme ? 'dark' : 'light'}
+      />
       <Link text='Animated' link='https://github.com' variant='animated' />
       <br />
       <IconButton

@@ -129,7 +129,7 @@
   box-shadow: -5px 5px 10px rgba(35, 39, 42, 0.2), 5px -5px 10px rgba(35, 39, 42, 0.2), -5px -5px 10px rgba(67, 73, 80, 0.9), 5px 5px 13px rgba(35, 39, 42, 0.9), inset 1px 1px 2px rgba(67, 73, 80, 0.3), inset -1px -1px 2px rgba(35, 39, 42, 0.5);
 }
 
-.link {
+.link, .linkDark {
   font-family: "Satoshi", sans-serif;
   padding: 10px 20px;
   cursor: pointer;
@@ -138,10 +138,17 @@
   color: #32383d;
   transition: all 300ms ease-in-out;
 }
-.link:hover {
+.link:hover, .linkDark:hover {
   transition: all 300ms ease-in-out;
   color: #de1149;
   text-decoration: underline;
+}
+
+.linkDark {
+  color: #f9f9f9;
+}
+.linkDark:hover {
+  color: #de1149;
 }
 
 .iconButton, .navbarBtnActive, .navbarBtnActiveDark, .navbarBtn, .iconButtonDark, .navbarBtnDark {
@@ -213,6 +220,7 @@
 
 .inputWrapper {
   position: relative;
+  width: 242px;
   display: block;
   margin-bottom: 20px;
 }
@@ -475,6 +483,9 @@
 }
 
 .profile, .image, .imageDark, .profileDark {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 7px;
   border-radius: 999px;
   background: #f9f9f9;
@@ -553,6 +564,7 @@
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
   border-radius: 99px;
   position: relative;
+  margin-top: 30px;
 }
 .progressWrapper .progress, .progressWrapperDark .progress, .progressWrapperDark .progressDark {
   height: 100%;
@@ -579,7 +591,7 @@
   background: url("https://tmdm.com.ar/u/dotted_lines.svg");
   margin-left: 10px;
 }
-.progressWrapper__lines div:nth-child(7) {
+.progressWrapper__lines div:nth-last-child(1) {
   opacity: 0;
 }
 
@@ -665,7 +677,11 @@
 
 .stepsNumber, .stepsDark .stepsNumberDark {
   border-radius: 999px;
-  padding: 10px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: #f9f9f9;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(220, 220, 220, 0.5), inset -5px 5px 10px rgba(220, 220, 220, 0.2), inset 5px -5px 10px rgba(220, 220, 220, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(220, 220, 220, 0.9);
@@ -674,8 +690,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 999px;
   font-family: "Nasalization", sans-serif;
   line-height: 30px;

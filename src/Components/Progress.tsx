@@ -62,7 +62,7 @@ export const ProgressWDashes = ({
         }}
       />
       <section className={styles.progressWrapper__lines}>
-        {[...Array(7)].map((_, i) => (
+        {[...Array(max)].map((_, i) => (
           <div key={i} />
         ))}
       </section>
