@@ -2,8 +2,8 @@ import * as React from 'react'
 import styles from '../styles.module.css'
 
 interface InputProps {
-  text: string
-  setText: (text: string) => void
+  value: string
+  onChange: (value: string) => void
   variant?:
     | 'light'
     | 'dark'
@@ -14,7 +14,12 @@ interface InputProps {
   placeholder?: string
 }
 
-export const Input = ({ text, setText, variant, placeholder }: InputProps) => {
+export const Input = ({
+  value,
+  onChange,
+  variant,
+  placeholder
+}: InputProps) => {
   const classname: any = {
     light: styles.input,
     dark: styles.inputDark,
@@ -29,8 +34,8 @@ export const Input = ({ text, setText, variant, placeholder }: InputProps) => {
       <input
         type={variant?.includes('password') && !seePass ? 'password' : 'text'}
         className={`${variant ? classname[variant] : classname.light}`}
-        value={text}
-        onChange={(e) => setText(e.target.value)}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder || 'Enter text'}
       />
       {variant === 'password' ? (
