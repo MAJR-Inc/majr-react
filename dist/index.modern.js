@@ -71,8 +71,8 @@ var NavbarBtn = function NavbarBtn(_ref) {
 };
 
 var Input = function Input(_ref) {
-  var text = _ref.text,
-    setText = _ref.setText,
+  var value = _ref.value,
+    _onChange = _ref.onChange,
     variant = _ref.variant,
     placeholder = _ref.placeholder;
   var classname = {
@@ -91,9 +91,9 @@ var Input = function Input(_ref) {
   }, createElement("input", {
     type: variant !== null && variant !== void 0 && variant.includes('password') && !seePass ? 'password' : 'text',
     className: "" + (variant ? classname[variant] : classname.light),
-    value: text,
+    value: value,
     onChange: function onChange(e) {
-      return setText(e.target.value);
+      return _onChange(e.target.value);
     },
     placeholder: placeholder || 'Enter text'
   }), variant === 'password' ? createElement("svg", {

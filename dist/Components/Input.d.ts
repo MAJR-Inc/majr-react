@@ -1,9 +1,9 @@
 /// <reference types="react" />
 interface InputProps {
-    text: string;
-    setText: (text: string) => void;
+    value: string;
+    onChange: (value: string) => void;
     variant?: 'light' | 'dark' | 'password' | 'passwordDark' | 'search' | 'searchDark';
     placeholder?: string;
 }
-export declare const Input: ({ text, setText, variant, placeholder }: InputProps) => JSX.Element;
+export declare const Input: ({ value, onChange, variant, placeholder }: InputProps) => JSX.Element;
 export {};

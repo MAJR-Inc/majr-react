@@ -5,7 +5,7 @@ import styles from '../styles.module.css'
 interface ButtonProps {
   icon: any
   onClick: () => void
-  variant?: 'light' | 'dark'
+  variant?: 'light' | 'dark' | 'main'
   rounded?: boolean
 }
 
@@ -17,7 +17,8 @@ export const IconButton = ({
 }: ButtonProps) => {
   const classname: any = {
     light: styles.iconButton,
-    dark: styles.iconButtonDark
+    dark: styles.iconButtonDark,
+    main: styles.iconButtonMain
   }
   return (
     <button
