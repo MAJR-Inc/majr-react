@@ -72,7 +72,12 @@
       inset 1px 1px 2px rgba(244, 19, 80, 0.3),
       inset -1px -1px 2px rgba(200, 15, 66, 0.5);
     &:hover {
-      box-shadow: $main-shadow-h;
+      box-shadow: -4px 4px 8px rgba(200, 15, 66, 0.2),
+        4px -4px 8px rgba(200, 15, 66, 0.2),
+        -4px -4px 8px rgba(244, 19, 80, 0.9),
+        4px 4px 10px rgba(200, 15, 66, 0.9),
+        inset 1px 1px 2px rgba(244, 19, 80, 0.3),
+        inset -1px -1px 2px rgba(200, 15, 66, 0.5);
     }
   }
 }
@@ -125,12 +130,12 @@
 }
 .inputWrapper {
   position: relative;
-  width: 242px;
+  width: 250px;
   display: block;
   margin-bottom: 20px;
 }
 .input {
-  max-width: 200px;
+  max-width: 250px;
   height: 50px;
   line-height: 50px;
   font-family: 'Satoshi', sans-serif;
@@ -150,7 +155,7 @@
   & ~ svg {
     cursor: pointer;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -854,7 +859,7 @@
       height: fit-content;
       padding: 20px 0;
       button {
-        width: calc(100vw / 40px);
+        width: calc(100vw - 40px);
         margin: 5px 0;
         height: 40px;
       }
