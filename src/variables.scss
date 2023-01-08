@@ -183,6 +183,24 @@ $light-flat: -5px 5px 10px rgba(232, 232, 232, 0.2),
       inset -1px -1px 2px rgba(50, 50, 53, 0.5);
     border-radius: 12px;
   }
+  &Green {
+    @extend .button;
+    color: #38383d;
+    background: #36f1cd;
+    box-shadow: -1px 1px 2px rgba(48, 214, 182, 0.2),
+      1px -1px 2px rgba(48, 214, 182, 0.2),
+      -1px -1px 2px rgba(60, 255, 228, 0.9), 1px 1px 3px rgba(48, 214, 182, 0.9),
+      inset 1px 1px 2px rgba(60, 255, 228, 0.3),
+      inset -1px -1px 2px rgba(48, 214, 182, 0.5);
+    &:hover {
+      box-shadow: -3px 3px 6px rgba(48, 214, 182, 0.2),
+        3px -3px 6px rgba(48, 214, 182, 0.2),
+        -3px -3px 6px rgba(60, 255, 228, 0.9),
+        3px 3px 8px rgba(48, 214, 182, 0.9),
+        inset 1px 1px 2px rgba(60, 255, 228, 0.3),
+        inset -1px -1px 2px rgba(48, 214, 182, 0.5);
+    }
+  }
 }
 
 .linkAnimated {

@@ -5,7 +5,7 @@ import styles from '../styles.module.css'
 interface ButtonProps {
   text: string
   onClick: () => void
-  variant?: 'light' | 'dark' | 'main' | 'highlight' | 'highlightdark'
+  variant?: 'light' | 'dark' | 'main' | 'highlight' | 'highlightdark' | 'green'
   rounded?: boolean
 }
 
@@ -15,7 +15,8 @@ export const Button = ({ text, onClick, variant, rounded }: ButtonProps) => {
     dark: styles.buttonDark,
     main: styles.buttonMain,
     highlight: styles.buttonHighlight,
-    highlightdark: styles.buttonHighlightDark
+    highlightdark: styles.buttonHighlightDark,
+    green: styles.buttonGreen,
   }
   return (
     <button
