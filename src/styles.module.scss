@@ -866,3 +866,21 @@
     }
   }
 }
+.buttonSm{
+  padding: 12px 30px;
+  gap: 5px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+.altFont{
+  font-family: "Nasalization", Helvetica, sans-serif;
+}
+.buttonFill{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
