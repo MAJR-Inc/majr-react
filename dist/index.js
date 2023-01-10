@@ -1,12 +1,17 @@
 var React = require('react');
 
-var styles = {"flat-light":"_37uGn","inputLight":"_5gfdI","button":"_2hTXI","buttonDark":"_2kUFE","buttonGreen":"_oBX5E","buttonSecondary":"_1Gipg","buttonMain":"_1iiPs","linkAnimated":"_vrVpH","link":"_71S8l","linkDark":"_toeZN","iconButton":"_2570K","navbarBtnActive":"_1W0H_","navbarBtnActiveDark":"_9TPHE","navbarBtn":"_2gBhj","iconButtonMain":"_KRwUs","iconButtonDark":"_1vMvm","navbarBtnDark":"_1_LN9","rounded":"_3gdqJ","inputWrapper":"_1V-hJ","input":"_2IYfc","textarea":"_24IuX","inputDark":"_2johG","textareaDark":"_2tmLN","textareaproperties":"_b3Ocf","radio":"_kkn6a","spotlight":"_1SOsU","spotlightDark":"_2YjhR","checkbox":"_3kknd","checkboxDark":"_2eX8z","radioDark":"_3QjCQ","radio__inner":"_2t5pY","spotlight__inner":"_hynTg","spotlight__innerActive":"_1WUYa","checkbox__inner":"_3O63b","radio__innerActive":"_1y9gd","checkbox__innerActive":"_2nnyc","select__inner":"_K4kjf","select__innerDark":"_3oq5m","select__options":"_2OWeN","select__optionsDark":"_2fH9V","switch":"_1zvwZ","switchDark":"_204Pu","switch__inner":"_yLiXT","switch__innerActive":"_1AOzu","footerButton":"_17aKo","footerButtonTwitter":"_qpthA","footerButtonDark":"_3-NH5","profile":"_2FLLu","image":"_2hdkJ","imageDark":"__VMFw","profileDark":"_22AHo","switch2":"_3isoC","switch2Dark":"_VPqNN","switch2__inner":"_1PWur","switch2__innerActive":"_2Qt4S","progressWrapper":"_fuT1A","progressWrapperDark":"_3Awf9","progress":"_2EqlW","progressDark":"_1YQhb","progressWrapper__lines":"_f2cuS","tag":"_kR9pS","tagDark":"_3ocXl","addButton":"_HUrcY","steps":"_tX7xC","stepsDark":"_3hKP7","stepsBar":"_3G1JP","stepsBarDark":"_27qPP","stepsBarActive":"_3zoqI","stepsNumber":"_i6jAu","stepsNumberDark":"_3Y_ou","stepsNumberInner":"_2MjMj","stepsNumberInnerActive":"_2j8cR","flatBox":"_1J_Qp","flatBoxDark":"_3aasJ","navbarLight":"_2o0Ql","navbarDark":"_eP6C_","footer":"_24OKz","footerDark":"_1PLfW"};
+var styles = {"flat-light":"_37uGn","inputLight":"_5gfdI","button":"_2hTXI","buttonDark":"_2kUFE","buttonGreen":"_oBX5E","buttonSecondary":"_1Gipg","buttonMain":"_1iiPs","linkAnimated":"_vrVpH","link":"_71S8l","linkDark":"_toeZN","iconButton":"_2570K","navbarBtnActive":"_1W0H_","navbarBtnActiveDark":"_9TPHE","navbarBtn":"_2gBhj","iconButtonMain":"_KRwUs","iconButtonDark":"_1vMvm","navbarBtnDark":"_1_LN9","rounded":"_3gdqJ","inputWrapper":"_1V-hJ","input":"_2IYfc","textarea":"_24IuX","inputDark":"_2johG","textareaDark":"_2tmLN","textareaproperties":"_b3Ocf","radio":"_kkn6a","spotlight":"_1SOsU","spotlightDark":"_2YjhR","checkbox":"_3kknd","checkboxDark":"_2eX8z","radioDark":"_3QjCQ","radio__inner":"_2t5pY","spotlight__inner":"_hynTg","spotlight__innerActive":"_1WUYa","checkbox__inner":"_3O63b","radio__innerActive":"_1y9gd","checkbox__innerActive":"_2nnyc","select__inner":"_K4kjf","select__innerDark":"_3oq5m","select__options":"_2OWeN","select__optionsDark":"_2fH9V","switch":"_1zvwZ","switchDark":"_204Pu","switch__inner":"_yLiXT","switch__innerActive":"_1AOzu","footerButton":"_17aKo","footerButtonTwitter":"_qpthA","footerButtonDark":"_3-NH5","profile":"_2FLLu","image":"_2hdkJ","imageDark":"__VMFw","profileDark":"_22AHo","switch2":"_3isoC","switch2Dark":"_VPqNN","switch2__inner":"_1PWur","switch2__innerActive":"_2Qt4S","progressWrapper":"_fuT1A","progressWrapperDark":"_3Awf9","progress":"_2EqlW","progressDark":"_1YQhb","progressWrapper__lines":"_f2cuS","tag":"_kR9pS","tagDark":"_3ocXl","addButton":"_HUrcY","steps":"_tX7xC","stepsDark":"_3hKP7","stepsBar":"_3G1JP","stepsBarDark":"_27qPP","stepsBarActive":"_3zoqI","stepsNumber":"_i6jAu","stepsNumberDark":"_3Y_ou","stepsNumberInner":"_2MjMj","stepsNumberInnerActive":"_2j8cR","flatBox":"_1J_Qp","flatBoxDark":"_3aasJ","navbarLight":"_2o0Ql","navbarDark":"_eP6C_","footer":"_24OKz","footerDark":"_1PLfW","buttonSm":"_2b7Ys","altFont":"_2QxlF","buttonFill":"_3X8zV"};
 
 var Button = function Button(_ref) {
   var text = _ref.text,
     onClick = _ref.onClick,
     variant = _ref.variant,
-    rounded = _ref.rounded;
+    rounded = _ref.rounded,
+    icon = _ref.icon,
+    iconPosition = _ref.iconPosition,
+    className = _ref.className,
+    size = _ref.size,
+    altFont = _ref.altFont;
   var classname = {
     light: styles.button,
     dark: styles.buttonDark,
@@ -15,10 +20,15 @@ var Button = function Button(_ref) {
     highlightdark: styles.buttonHighlightDark,
     green: styles.buttonGreen
   };
+  var sizesClassNames = {
+    small: styles.buttonSm,
+    normal: styles.buttonMd,
+    fillWidth: styles.buttonFill
+  };
   return React.createElement("button", {
-    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : ''),
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + "  \n      ",
     onClick: onClick
-  }, text);
+  }, iconPosition === 'left' && icon, text, iconPosition === 'right' && icon);
 };
 
 var Link = function Link(_ref) {
