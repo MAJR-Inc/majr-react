@@ -22,7 +22,8 @@ import { Steps, StepsBar, StepsNumber } from './Components/Steps'
 import { FlatBox } from './Components/FlatBox'
 import { Navbar } from './Components/Composed/Navbar'
 import { Footer } from './Components/Composed/Footer'
-
+import { Circle } from './Components/Circle'
+import { ButtonShadow } from './Components/ShadowButton'
 export {
   Button,
   Link,
@@ -51,5 +52,7 @@ export {
   StepsNumber,
   FlatBox,
   Navbar,
-  Footer
+  Footer,
+  Circle,
+  ButtonShadow
 }

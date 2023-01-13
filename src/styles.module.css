@@ -47,7 +47,7 @@
   -moz-appearance: textfield !important;
 }
 
-.button, .buttonDark, .buttonGreen, .buttonSecondary, .buttonMain {
+.button, .buttonShadow, .buttonDark, .buttonGreen, .buttonSecondary, .buttonMain {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
@@ -65,7 +65,7 @@
   justify-content: center;
   gap: 10px;
 }
-.button:hover, .buttonDark:hover, .buttonGreen:hover, .buttonSecondary:hover, .buttonMain:hover {
+.button:hover, .buttonShadow:hover, .buttonDark:hover, .buttonGreen:hover, .buttonSecondary:hover, .buttonMain:hover {
   transition: all 300ms ease-in-out;
   box-shadow: -5px 5px 10px rgba(195, 195, 195, 0.2), 5px -5px 10px rgba(195, 195, 195, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(195, 195, 195, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(195, 195, 195, 0.5);
 }
@@ -213,6 +213,8 @@
 }
 .navbarBtnActive, .navbarBtnActiveDark {
   padding: 0 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: 50px;
   font-weight: normal;
@@ -421,7 +423,7 @@
 .select__options div:hover, .select__optionsDark div:hover {
   cursor: pointer;
   font-weight: 900;
-  background: #d9d9d930;
+  background: rgba(217, 217, 217, 0.1882352941);
 }
 
 .select__optionsDark {
@@ -432,7 +434,7 @@
   color: #f9f9f9;
 }
 .select__optionsDark div:hover {
-  background: #d9d9d930;
+  background: rgba(217, 217, 217, 0.1882352941);
 }
 
 .switch, .switchDark {
@@ -499,6 +501,8 @@
 }
 
 .profile, .image, .imageDark, .profileDark {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 7px;
   border-radius: 999px;
@@ -526,7 +530,8 @@
 .image img, .imageDark img {
   background-position: center;
   background-size: cover;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-radius: 8px;
 }
 
@@ -765,7 +770,8 @@
   width: calc(100vw - 80px);
   height: 70px;
   background: rgba(249, 249, 249, 0.3);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -807,7 +813,8 @@
 
 .navbarDark {
   background: rgba(50, 56, 61, 0.3);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .navbarDark section h2 {
   color: #f9f9f9;
@@ -842,10 +849,115 @@
   margin-right: 20px;
 }
 
+.circle, .buttonShadowBlack, .buttonShadowGreen, .buttonShadowYellow, .buttonShadowBlue, .buttonShadowRed, .buttonShadow, .circleYellow, .circleBlue, .circleRed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+.circleRed {
+  box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2), 5px -5px 10px rgba(199, 25, 23, 0.2), -5px -5px 10px rgba(243, 31, 29, 0.9), 5px 5px 13px rgba(199, 25, 23, 0.9), inset 1px 1px 2px rgba(243, 31, 29, 0.3), inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+}
+.circleRed.circleActive {
+  background: #dd1c1a;
+}
+.circleRed.circleActive svg,
+.circleRed.circleActive path {
+  stroke: #f9f9f9 !important;
+}
+.circleBlue {
+  box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2), 5px -5px 10px rgba(42, 77, 136, 0.2), -5px -5px 10px rgba(52, 94, 166, 0.9), 5px 5px 13px rgba(42, 77, 136, 0.9), inset 1px 1px 2px rgba(52, 94, 166, 0.3), inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+}
+.circleBlue.circleActive {
+  background: #2f5597;
+}
+.circleBlue.circleActive svg,
+.circleBlue.circleActive path {
+  stroke: #f9f9f9 !important;
+}
+.circleYellow {
+  box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2), 5px -5px 10px rgba(230, 173, 0, 0.2), -5px -5px 10px rgba(255, 211, 0, 0.9), 5px 5px 13px rgba(230, 173, 0, 0.9), inset 1px 1px 2px rgba(255, 211, 0, 0.3), inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+}
+.circleYellow.circleActive {
+  background: #ffc000;
+}
+
+.buttonShadow {
+  background-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+}
+.buttonShadowRed {
+  box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2), 5px -5px 10px rgba(199, 25, 23, 0.2), -5px -5px 10px rgba(243, 31, 29, 0.9), 5px 5px 13px rgba(199, 25, 23, 0.9), inset 1px 1px 2px rgba(243, 31, 29, 0.3), inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+}
+.buttonShadowRed.circleActive, .buttonShadowRed:hover {
+  background: #dd1c1a;
+  box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2), 5px -5px 10px rgba(199, 25, 23, 0.2), -5px -5px 10px rgba(243, 31, 29, 0.9), 5px 5px 13px rgba(199, 25, 23, 0.9), inset 1px 1px 2px rgba(243, 31, 29, 0.3), inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+  color: #f9f9f9;
+  transition: all 200ms ease-in-out;
+}
+.buttonShadowRed.circleActive svg,
+.buttonShadowRed.circleActive path, .buttonShadowRed:hover svg,
+.buttonShadowRed:hover path {
+  stroke: #f9f9f9 !important;
+}
+.buttonShadowBlue {
+  box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2), 5px -5px 10px rgba(42, 77, 136, 0.2), -5px -5px 10px rgba(52, 94, 166, 0.9), 5px 5px 13px rgba(42, 77, 136, 0.9), inset 1px 1px 2px rgba(52, 94, 166, 0.3), inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+}
+.buttonShadowBlue.circleActive, .buttonShadowBlue:hover {
+  color: #f9f9f9;
+  background: #2f5597;
+  box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2), 5px -5px 10px rgba(42, 77, 136, 0.2), -5px -5px 10px rgba(52, 94, 166, 0.9), 5px 5px 13px rgba(42, 77, 136, 0.9), inset 1px 1px 2px rgba(52, 94, 166, 0.3), inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+  transition: all 200ms ease-in-out;
+}
+.buttonShadowBlue.circleActive svg,
+.buttonShadowBlue.circleActive path, .buttonShadowBlue:hover svg,
+.buttonShadowBlue:hover path {
+  stroke: #f9f9f9 !important;
+}
+.buttonShadowYellow {
+  box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2), 5px -5px 10px rgba(230, 173, 0, 0.2), -5px -5px 10px rgba(255, 211, 0, 0.9), 5px 5px 13px rgba(230, 173, 0, 0.9), inset 1px 1px 2px rgba(255, 211, 0, 0.3), inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+}
+.buttonShadowYellow.circleActive, .buttonShadowYellow:hover {
+  background: #ffc000;
+  box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2), 5px -5px 10px rgba(230, 173, 0, 0.2), -5px -5px 10px rgba(255, 211, 0, 0.9), 5px 5px 13px rgba(230, 173, 0, 0.9), inset 1px 1px 2px rgba(255, 211, 0, 0.3), inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+  transition: all 200ms ease-in-out;
+}
+.buttonShadowGreen {
+  box-shadow: -5px 5px 10px rgba(0, 184, 92, 0.2), 5px -5px 10px rgba(0, 184, 92, 0.2), -5px -5px 10px rgba(0, 224, 112, 0.9), 5px 5px 13px rgba(0, 184, 92, 0.9), inset 1px 1px 2px rgba(0, 224, 112, 0.3), inset -1px -1px 2px rgba(0, 184, 92, 0.5);
+}
+.buttonShadowGreen.circleActive, .buttonShadowGreen:hover {
+  background: #00cc66;
+  box-shadow: -5px 5px 10px rgba(0, 184, 92, 0.2), 5px -5px 10px rgba(0, 184, 92, 0.2), -5px -5px 10px rgba(0, 224, 112, 0.9), 5px 5px 13px rgba(0, 184, 92, 0.9), inset 1px 1px 2px rgba(0, 224, 112, 0.3), inset -1px -1px 2px rgba(0, 184, 92, 0.5);
+  transition: all 200ms ease-in-out;
+}
+.buttonShadowBlack {
+  box-shadow: -5px 5px 10px rgba(50, 50, 55, 0.2), 5px -5px 10px rgba(50, 50, 55, 0.2), -5px -5px 10px rgba(62, 62, 67, 0.9), 5px 5px 13px rgba(50, 50, 55, 0.9), inset 1px 1px 2px rgba(62, 62, 67, 0.3), inset -1px -1px 2px rgba(50, 50, 55, 0.5);
+}
+.buttonShadowBlack.circleActive, .buttonShadowBlack:hover {
+  color: #f9f9f9;
+  background: #38383d;
+  box-shadow: -5px 5px 10px rgba(50, 50, 55, 0.2), 5px -5px 10px rgba(50, 50, 55, 0.2), -5px -5px 10px rgba(62, 62, 67, 0.9), 5px 5px 13px rgba(50, 50, 55, 0.9), inset 1px 1px 2px rgba(62, 62, 67, 0.3), inset -1px -1px 2px rgba(50, 50, 55, 0.5);
+  transition: all 200ms ease-in-out;
+}
+.buttonShadowBlack.circleActive svg,
+.buttonShadowBlack.circleActive path, .buttonShadowBlack:hover svg,
+.buttonShadowBlack:hover path {
+  stroke: #f9f9f9 !important;
+}
+
 @media (max-width: 768px) {
   .navbarLight, .navbarDark {
     display: flex;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .navbarLight section:nth-child(1), .navbarDark section:nth-child(1) {
@@ -874,13 +986,16 @@
     width: 100%;
     margin-bottom: 20px;
   }
-
   .footer, .footerDark {
     display: flex;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .footer section, .footerDark section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     padding: 20px 0;
   }

@@ -818,7 +818,174 @@
     }
   }
 }
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: none;
+  transition: all 200ms ease-in-out;
+  &Red {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2),
+      5px -5px 10px rgba(199, 25, 23, 0.2),
+      -5px -5px 10px rgba(243, 31, 29, 0.9), 5px 5px 13px rgba(199, 25, 23, 0.9),
+      inset 1px 1px 2px rgba(243, 31, 29, 0.3),
+      inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+    &.circleActive {
+      background: #dd1c1a;
+      svg,
+      path {
+        stroke: #f9f9f9 !important;
+      }
+    }
+  }
+  &Blue {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2),
+      5px -5px 10px rgba(42, 77, 136, 0.2),
+      -5px -5px 10px rgba(52, 94, 166, 0.9), 5px 5px 13px rgba(42, 77, 136, 0.9),
+      inset 1px 1px 2px rgba(52, 94, 166, 0.3),
+      inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+    &.circleActive {
+      background: #2f5597;
+      svg,
+      path {
+        stroke: #f9f9f9 !important;
+      }
+    }
+  }
+  &Yellow {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2),
+      5px -5px 10px rgba(230, 173, 0, 0.2),
+      -5px -5px 10px rgba(255, 211, 0, 0.9), 5px 5px 13px rgba(230, 173, 0, 0.9),
+      inset 1px 1px 2px rgba(255, 211, 0, 0.3),
+      inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+    &.circleActive {
+      background: #ffc000;
+    }
+  }
+}
+.buttonShadow {
+  @extend .button;
+  @extend .circle;
+  background-color: transparent;
+  width: fit-content;
+  border-radius: 8px;
+  &Red {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2),
+      5px -5px 10px rgba(199, 25, 23, 0.2),
+      -5px -5px 10px rgba(243, 31, 29, 0.9), 5px 5px 13px rgba(199, 25, 23, 0.9),
+      inset 1px 1px 2px rgba(243, 31, 29, 0.3),
+      inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+    &.circleActive,
+    &:hover {
+      background: #dd1c1a;
+      box-shadow: -5px 5px 10px rgba(199, 25, 23, 0.2),
+        5px -5px 10px rgba(199, 25, 23, 0.2),
+        -5px -5px 10px rgba(243, 31, 29, 0.9),
+        5px 5px 13px rgba(199, 25, 23, 0.9),
+        inset 1px 1px 2px rgba(243, 31, 29, 0.3),
+        inset -1px -1px 2px rgba(199, 25, 23, 0.5);
+      color: #f9f9f9;
+      transition: all 200ms ease-in-out;
+      svg,
+      path {
+        stroke: #f9f9f9 !important;
+      }
+    }
+  }
+  &Blue {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2),
+      5px -5px 10px rgba(42, 77, 136, 0.2),
+      -5px -5px 10px rgba(52, 94, 166, 0.9), 5px 5px 13px rgba(42, 77, 136, 0.9),
+      inset 1px 1px 2px rgba(52, 94, 166, 0.3),
+      inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+    &.circleActive,
+    &:hover {
+      color: #f9f9f9;
+      background: #2f5597;
+      box-shadow: -5px 5px 10px rgba(42, 77, 136, 0.2),
+        5px -5px 10px rgba(42, 77, 136, 0.2),
+        -5px -5px 10px rgba(52, 94, 166, 0.9),
+        5px 5px 13px rgba(42, 77, 136, 0.9),
+        inset 1px 1px 2px rgba(52, 94, 166, 0.3),
+        inset -1px -1px 2px rgba(42, 77, 136, 0.5);
+      transition: all 200ms ease-in-out;
+      svg,
+      path {
+        stroke: #f9f9f9 !important;
+      }
+    }
+  }
+  &Yellow {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2),
+      5px -5px 10px rgba(230, 173, 0, 0.2),
+      -5px -5px 10px rgba(255, 211, 0, 0.9), 5px 5px 13px rgba(230, 173, 0, 0.9),
+      inset 1px 1px 2px rgba(255, 211, 0, 0.3),
+      inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+    &.circleActive,
+    &:hover {
+      background: #ffc000;
+      box-shadow: -5px 5px 10px rgba(230, 173, 0, 0.2),
+        5px -5px 10px rgba(230, 173, 0, 0.2),
+        -5px -5px 10px rgba(255, 211, 0, 0.9),
+        5px 5px 13px rgba(230, 173, 0, 0.9),
+        inset 1px 1px 2px rgba(255, 211, 0, 0.3),
+        inset -1px -1px 2px rgba(230, 173, 0, 0.5);
+      transition: all 200ms ease-in-out;
+    }
+  }
+  &Green {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(0, 184, 92, 0.2),
+      5px -5px 10px rgba(0, 184, 92, 0.2), -5px -5px 10px rgba(0, 224, 112, 0.9),
+      5px 5px 13px rgba(0, 184, 92, 0.9),
+      inset 1px 1px 2px rgba(0, 224, 112, 0.3),
+      inset -1px -1px 2px rgba(0, 184, 92, 0.5);
+    &.circleActive,
+    &:hover {
+      background: #00cc66;
+      box-shadow: -5px 5px 10px rgba(0, 184, 92, 0.2),
+        5px -5px 10px rgba(0, 184, 92, 0.2),
+        -5px -5px 10px rgba(0, 224, 112, 0.9),
+        5px 5px 13px rgba(0, 184, 92, 0.9),
+        inset 1px 1px 2px rgba(0, 224, 112, 0.3),
+        inset -1px -1px 2px rgba(0, 184, 92, 0.5);
+      transition: all 200ms ease-in-out;
+    }
+  }
+  &Black {
+    @extend .circle;
+    box-shadow: -5px 5px 10px rgba(50, 50, 55, 0.2),
+      5px -5px 10px rgba(50, 50, 55, 0.2), -5px -5px 10px rgba(62, 62, 67, 0.9),
+      5px 5px 13px rgba(50, 50, 55, 0.9),
+      inset 1px 1px 2px rgba(62, 62, 67, 0.3),
+      inset -1px -1px 2px rgba(50, 50, 55, 0.5);
+    &.circleActive,
+    &:hover {
+      color: #f9f9f9;
 
+      background: #38383d;
+      box-shadow: -5px 5px 10px rgba(50, 50, 55, 0.2),
+        5px -5px 10px rgba(50, 50, 55, 0.2),
+        -5px -5px 10px rgba(62, 62, 67, 0.9), 5px 5px 13px rgba(50, 50, 55, 0.9),
+        inset 1px 1px 2px rgba(62, 62, 67, 0.3),
+        inset -1px -1px 2px rgba(50, 50, 55, 0.5);
+      transition: all 200ms ease-in-out;
+      svg,
+      path {
+        stroke: #f9f9f9 !important;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .navbarLight {
     display: flex;
@@ -862,12 +1029,11 @@
         width: calc(100vw - 40px);
         margin: 5px 0;
         height: 40px;
-        
       }
     }
   }
 }
-.buttonSm{
+.buttonSm {
   padding: 12px 30px;
   gap: 5px;
   border: none;
@@ -876,10 +1042,10 @@
   font-size: 15px;
   line-height: 18px;
 }
-.altFont{
-  font-family: "Nasalization", Helvetica, sans-serif;
+.altFont {
+  font-family: 'Nasalization', Helvetica, sans-serif;
 }
-.buttonFill{
+.buttonFill {
   width: 100%;
   display: flex;
   flex-direction: row;
