@@ -1,20 +1,19 @@
 import React__default, { createElement, useState, Fragment } from 'react';
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonShadow":"_styles-module__buttonShadow__2Ei4E","buttonDark":"_styles-module__buttonDark__2kUFE","buttonGreen":"_styles-module__buttonGreen__oBX5E","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","linkDark":"_styles-module__linkDark__toeZN","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonMain":"_styles-module__iconButtonMain__KRwUs","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR","flatBox":"_styles-module__flatBox__1J_Qp","flatBoxDark":"_styles-module__flatBoxDark__3aasJ","navbarLight":"_styles-module__navbarLight__2o0Ql","navbarDark":"_styles-module__navbarDark__eP6C_","footer":"_styles-module__footer__24OKz","footerDark":"_styles-module__footerDark__1PLfW","circle":"_styles-module__circle__3PfrK","buttonShadowBlack":"_styles-module__buttonShadowBlack__3DJzH","buttonShadowGreen":"_styles-module__buttonShadowGreen__29kiG","buttonShadowYellow":"_styles-module__buttonShadowYellow__6iYFk","buttonShadowBlue":"_styles-module__buttonShadowBlue__KYpse","buttonShadowRed":"_styles-module__buttonShadowRed__3uH9M","circleYellow":"_styles-module__circleYellow__2WdWD","circleBlue":"_styles-module__circleBlue__2C_yZ","circleRed":"_styles-module__circleRed__e7aeM","circleActive":"_styles-module__circleActive__1oQ1A","disabled":"_styles-module__disabled__2RWmX","buttonSm":"_styles-module__buttonSm__2b7Ys","altFont":"_styles-module__altFont__2QxlF","buttonFill":"_styles-module__buttonFill__3X8zV"};
+var styles = {"flat-light":"_37uGn","inputLight":"_5gfdI","button":"_2hTXI","buttonShadow":"_2Ei4E","buttonDark":"_2kUFE","buttonGreen":"_oBX5E","buttonSecondary":"_1Gipg","buttonMain":"_1iiPs","linkAnimated":"_vrVpH","link":"_71S8l","linkDark":"_toeZN","iconButton":"_2570K","navbarBtnActive":"_1W0H_","navbarBtnActiveDark":"_9TPHE","navbarBtn":"_2gBhj","iconButtonMain":"_KRwUs","iconButtonDark":"_1vMvm","navbarBtnDark":"_1_LN9","rounded":"_3gdqJ","inputWrapper":"_1V-hJ","input":"_2IYfc","textarea":"_24IuX","inputDark":"_2johG","textareaDark":"_2tmLN","textareaproperties":"_b3Ocf","radio":"_kkn6a","spotlight":"_1SOsU","spotlightDark":"_2YjhR","checkbox":"_3kknd","checkboxDark":"_2eX8z","radioDark":"_3QjCQ","radio__inner":"_2t5pY","spotlight__inner":"_hynTg","spotlight__innerActive":"_1WUYa","checkbox__inner":"_3O63b","radio__innerActive":"_1y9gd","checkbox__innerActive":"_2nnyc","select__inner":"_K4kjf","select__innerDark":"_3oq5m","select__options":"_2OWeN","select__optionsDark":"_2fH9V","switch":"_1zvwZ","switchDark":"_204Pu","switch__inner":"_yLiXT","switch__innerActive":"_1AOzu","footerButton":"_17aKo","footerButtonTwitter":"_qpthA","footerButtonDark":"_3-NH5","profile":"_2FLLu","image":"_2hdkJ","imageDark":"__VMFw","profileDark":"_22AHo","switch2":"_3isoC","switch2Dark":"_VPqNN","switch2__inner":"_1PWur","switch2__innerActive":"_2Qt4S","progressWrapper":"_fuT1A","progressWrapperDark":"_3Awf9","progress":"_2EqlW","progressDark":"_1YQhb","progressWrapper__lines":"_f2cuS","tag":"_kR9pS","tagDark":"_3ocXl","addButton":"_HUrcY","steps":"_tX7xC","stepsDark":"_3hKP7","stepsBar":"_3G1JP","stepsBarDark":"_27qPP","stepsBarActive":"_3zoqI","stepsNumber":"_i6jAu","stepsNumberDark":"_3Y_ou","stepsNumberInner":"_2MjMj","stepsNumberInnerActive":"_2j8cR","flatBox":"_1J_Qp","flatBoxDark":"_3aasJ","navbarLight":"_2o0Ql","navbarDark":"_eP6C_","footer":"_24OKz","footerDark":"_1PLfW","circle":"_3PfrK","buttonShadowBlack":"_3DJzH","buttonShadowGreen":"_29kiG","buttonShadowYellow":"_6iYFk","buttonShadowBlue":"_KYpse","buttonShadowRed":"_3uH9M","circleYellow":"_2WdWD","circleBlue":"_2C_yZ","circleRed":"_e7aeM","circleActive":"_1oQ1A","disabled":"_2RWmX","buttonSm":"_2b7Ys","altFont":"_2QxlF","buttonFill":"_3X8zV"};
 
-const Button = ({
-  text,
-  onClick,
-  variant,
-  rounded,
-  icon,
-  iconPosition,
-  className,
-  size,
-  altFont,
-  disabled
-}) => {
-  const classname = {
+var Button = function Button(_ref) {
+  var text = _ref.text,
+    onClick = _ref.onClick,
+    variant = _ref.variant,
+    rounded = _ref.rounded,
+    icon = _ref.icon,
+    iconPosition = _ref.iconPosition,
+    className = _ref.className,
+    size = _ref.size,
+    altFont = _ref.altFont,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.button,
     dark: styles.buttonDark,
     main: styles.buttonMain,
@@ -22,82 +21,79 @@ const Button = ({
     highlightdark: styles.buttonHighlightDark,
     green: styles.buttonGreen
   };
-  const sizesClassNames = {
+  var sizesClassNames = {
     small: styles.buttonSm,
     normal: styles.buttonMd,
     fillWidth: styles.buttonFill
   };
   return createElement("button", {
-    className: `${variant ? classname[variant] : classname.light} ${rounded ? styles.rounded : ''} ${className || ''} ${size ? sizesClassNames[size] : ''} ${altFont ? styles.altFont : ''} ${disabled ? styles.disabled : ''}
-      `,
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + " " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, iconPosition === 'left' && icon, text, iconPosition === 'right' && icon);
 };
 
-const Link = ({
-  text,
-  link,
-  variant,
-  className,
-  disabled
-}) => {
-  const classname = {
+var Link = function Link(_ref) {
+  var text = _ref.text,
+    link = _ref.link,
+    variant = _ref.variant,
+    className = _ref.className,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.link,
     dark: styles.linkDark,
     animated: styles.linkAnimated
   };
   return createElement("a", {
-    className: `${variant ? classname[variant] : classname.light} ${className || ''} ${disabled ? styles.disabled : ''}`,
-    onClick: () => window.open(link, '_blank')
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
+    onClick: function onClick() {
+      return window.open(link, '_blank');
+    }
   }, text);
 };
 
-const IconButton = ({
-  icon,
-  onClick,
-  variant,
-  rounded,
-  disabled
-}) => {
-  const classname = {
+var IconButton = function IconButton(_ref) {
+  var icon = _ref.icon,
+    onClick = _ref.onClick,
+    variant = _ref.variant,
+    rounded = _ref.rounded,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.iconButton,
     dark: styles.iconButtonDark,
     main: styles.iconButtonMain
   };
   return createElement("button", {
-    className: `${variant ? classname[variant] : classname.light} ${rounded ? styles.rounded : ''}${disabled ? styles.disabled : ''}`,
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, icon);
 };
 
-const NavbarBtn = ({
-  icon,
-  text,
-  onClick,
-  variant,
-  rounded
-}) => {
-  const classname = {
+var NavbarBtn = function NavbarBtn(_ref) {
+  var icon = _ref.icon,
+    text = _ref.text,
+    onClick = _ref.onClick,
+    variant = _ref.variant,
+    rounded = _ref.rounded;
+  var classname = {
     light: styles.navbarBtn,
     dark: styles.navbarBtnDark,
     active: styles.navbarBtnActive,
     activeDark: styles.navbarBtnActiveDark
   };
   return createElement("button", {
-    className: `${variant ? classname[variant] : classname.light} ${rounded ? styles.rounded : ''}`,
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : ''),
     onClick: onClick
   }, icon, variant && variant.includes('active') ? text : null);
 };
 
-const Input = ({
-  value,
-  onChange,
-  variant,
-  placeholder,
-  disabled,
-  className
-}) => {
-  const classname = {
+var Input = function Input(_ref) {
+  var value = _ref.value,
+    _onChange = _ref.onChange,
+    variant = _ref.variant,
+    placeholder = _ref.placeholder,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var classname = {
     light: styles.input,
     dark: styles.inputDark,
     password: styles.input,
@@ -105,17 +101,23 @@ const Input = ({
     search: styles.input,
     searchDark: styles.inputDark
   };
-  const [seePass, setSeePass] = useState(false);
+  var _React$useState = useState(false),
+    seePass = _React$useState[0],
+    setSeePass = _React$useState[1];
   return createElement("section", {
-    className: `${styles.inputWrapper}`
+    className: "" + styles.inputWrapper
   }, createElement("input", {
     type: variant !== null && variant !== void 0 && variant.includes('password') && !seePass ? 'password' : 'text',
-    className: `${variant ? classname[variant] : classname.light} ${disabled ? styles.disabled : ''} ${className || ''}`,
+    className: (variant ? classname[variant] : classname.light) + " " + (disabled ? styles.disabled : '') + " " + (className || ''),
     value: value,
-    onChange: e => onChange(e.target.value),
+    onChange: function onChange(e) {
+      return _onChange(e.target.value);
+    },
     placeholder: placeholder || 'Enter text'
   }), variant === 'password' ? createElement("svg", {
-    onClick: () => setSeePass(!seePass),
+    onClick: function onClick() {
+      return setSeePass(!seePass);
+    },
     width: '14',
     height: '11',
     viewBox: '0 0 14 11',
@@ -128,7 +130,9 @@ const Input = ({
     fill: '#38383B',
     fillOpacity: '0.5'
   })) : null, variant === 'passwordDark' ? createElement("svg", {
-    onClick: () => setSeePass(!seePass),
+    onClick: function onClick() {
+      return setSeePass(!seePass);
+    },
     width: '14',
     height: '11',
     viewBox: '0 0 14 11',
@@ -167,90 +171,98 @@ const Input = ({
   })) : null);
 };
 
-const Textarea = ({
-  text,
-  setText,
-  variant,
-  placeholder,
-  className,
-  disabled
-}) => {
-  const classname = {
+var Textarea = function Textarea(_ref) {
+  var text = _ref.text,
+    setText = _ref.setText,
+    variant = _ref.variant,
+    placeholder = _ref.placeholder,
+    className = _ref.className,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.textarea,
     dark: styles.textareaDark
   };
   return createElement("textarea", {
-    className: `${variant ? classname[variant] : classname.light} ${className || ''} ${disabled ? styles.disabled : ''}`,
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     value: text,
-    onChange: e => setText(e.target.value),
+    onChange: function onChange(e) {
+      return setText(e.target.value);
+    },
     placeholder: placeholder || 'Enter text'
   });
 };
 
-const Radio = ({
-  radio,
-  setRadio,
-  index,
-  variant,
-  disabled,
-  className
-}) => {
-  const classname = {
+var Radio = function Radio(_ref) {
+  var radio = _ref.radio,
+    setRadio = _ref.setRadio,
+    index = _ref.index,
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var classname = {
     light: styles.radio,
     dark: styles.radioDark
   };
-  const handleClick = () => {
-    const newRadio = radio.map(() => false);
+  var handleClick = function handleClick() {
+    var newRadio = radio.map(function () {
+      return false;
+    });
     newRadio[index] = true;
     setRadio(newRadio);
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light} ${className || ''} ${disabled ? styles.disabled : ''}`,
-    onClick: () => handleClick()
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
+    onClick: function onClick() {
+      return handleClick();
+    }
   }, createElement("div", {
     className: radio[index] ? styles.radio__innerActive : styles.radio__inner
   }));
 };
 
-const Checkbox = ({
-  checkbox,
-  setCheckbox,
-  index,
-  variant,
-  disabled
-}) => {
-  const classname = {
+var Checkbox = function Checkbox(_ref) {
+  var checkbox = _ref.checkbox,
+    setCheckbox = _ref.setCheckbox,
+    index = _ref.index,
+    variant = _ref.variant,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.checkbox,
     dark: styles.checkboxDark
   };
-  const handleClick = () => {
-    setCheckbox(checkbox.map((r, i) => i === index ? !r : r));
+  var handleClick = function handleClick() {
+    setCheckbox(checkbox.map(function (r, i) {
+      return i === index ? !r : r;
+    }));
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`,
-    onClick: () => handleClick()
+    className: "" + (variant ? classname[variant] : classname.light),
+    onClick: function onClick() {
+      return handleClick();
+    }
   }, createElement("div", {
-    className: `${checkbox[index] ? styles.checkbox__innerActive : styles.checkbox__inner} ${disabled ? styles.disabled : ''}`
+    className: (checkbox[index] ? styles.checkbox__innerActive : styles.checkbox__inner) + " " + (disabled ? styles.disabled : '')
   }));
 };
 
-const Spotlight = ({
-  clicked,
-  setClicked,
-  variant,
-  disabled,
-  className
-}) => {
-  const classname = {
+var Spotlight = function Spotlight(_ref) {
+  var clicked = _ref.clicked,
+    setClicked = _ref.setClicked,
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var classname = {
     light: styles.spotlight,
     dark: styles.spotlightDark
   };
-  const handleClick = () => {
+  var handleClick = function handleClick() {
     if (!disabled) setClicked(!clicked);
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light} ${className || ''}${disabled ? styles.disabled : ''}`,
-    onClick: () => handleClick()
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + (disabled ? styles.disabled : ''),
+    onClick: function onClick() {
+      return handleClick();
+    }
   }, createElement("div", {
     className: clicked ? styles.spotlight__innerActive : styles.spotlight__inner
   }, createElement("svg", {
@@ -270,17 +282,20 @@ const Spotlight = ({
   }))));
 };
 
-const Select = ({
-  select,
-  setSelect,
-  def,
-  variant,
-  disabled,
-  className
-}) => {
-  const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(-1);
-  const handleClick = index => {
+var Select = function Select(_ref) {
+  var select = _ref.select,
+    setSelect = _ref.setSelect,
+    def = _ref.def,
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var _React$useState = useState(false),
+    open = _React$useState[0],
+    setOpen = _React$useState[1];
+  var _React$useState2 = useState(-1),
+    selected = _React$useState2[0],
+    setSelected = _React$useState2[1];
+  var handleClick = function handleClick(index) {
     setSelected(index);
     setSelect(index);
     setOpen(false);
@@ -288,8 +303,10 @@ const Select = ({
   return createElement("div", {
     className: styles.select
   }, createElement("div", {
-    className: `${variant === 'dark' ? styles.select__innerDark : styles.select__inner} ${className || ''} ${disabled ? styles.disabled : ''}`,
-    onClick: () => setOpen(!open)
+    className: (variant === 'dark' ? styles.select__innerDark : styles.select__inner) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
+    onClick: function onClick() {
+      return setOpen(!open);
+    }
   }, selected !== -1 ? select[selected] : def || 'Select', createElement("svg", {
     width: '12',
     height: '7',
@@ -306,27 +323,27 @@ const Select = ({
     strokeLinejoin: 'round'
   }))), open && createElement("div", {
     className: variant === 'dark' ? styles.select__optionsDark : styles.select__options
-  }, select.map((r, i) => createElement("div", {
-    key: i,
-    className: styles.select__option,
-    onClick: () => handleClick(i)
-  }, r))));
+  }, select.map(function (r, i) {
+    return createElement("div", {
+      key: i,
+      className: styles.select__option,
+      onClick: function onClick() {
+        return handleClick(i);
+      }
+    }, r);
+  })));
 };
 
-const ThemeSwitch = ({
-  value,
-  setSwitch,
-  disabled,
-  className
-}) => {
-  const handleClick = () => {
+var ThemeSwitch = function ThemeSwitch(_ref) {
+  var value = _ref.value,
+    setSwitch = _ref.setSwitch,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var handleClick = function handleClick() {
     if (!disabled) setSwitch(!value);
   };
   return createElement("div", {
-    className: `${!value ? styles.switch : styles.switchDark}
-        ${className || ''}
-        ${disabled ? styles.disabled : ''}
-      `,
+    className: (!value ? styles["switch"] : styles.switchDark) + "\n        " + (className || '') + "\n        " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: handleClick
   }, createElement("div", {
     className: !value ? styles.switch__innerActive : styles.switch__inner
@@ -364,37 +381,35 @@ const ThemeSwitch = ({
     strokeLinejoin: 'round'
   }))));
 };
-const SwitchComponent = ({
-  value,
-  setSwitch,
-  variant,
-  className,
-  disabled
-}) => {
-  const handleClick = () => {
+var SwitchComponent = function SwitchComponent(_ref2) {
+  var value = _ref2.value,
+    setSwitch = _ref2.setSwitch,
+    variant = _ref2.variant,
+    className = _ref2.className,
+    disabled = _ref2.disabled;
+  var handleClick = function handleClick() {
     if (!disabled) setSwitch(!value);
   };
   return createElement("div", {
-    className: `${variant === 'light' ? styles.switch2 : styles.switch2Dark} ${className || ''} ${disabled ? styles.disabled : ''}`,
+    className: (variant === 'light' ? styles.switch2 : styles.switch2Dark) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     onClick: handleClick
   }, createElement("div", {
     className: value ? styles.switch2__innerActive : styles.switch2__inner
   }));
 };
 
-const FooterButton = ({
-  variant,
-  text,
-  onClick,
-  disabled
-}) => {
-  const classname = {
+var FooterButton = function FooterButton(_ref) {
+  var variant = _ref.variant,
+    text = _ref.text,
+    onClick = _ref.onClick,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.footerButton,
     dark: styles.footerButtonDark,
     twitter: styles.footerButtonTwitter
   };
   return createElement("button", {
-    className: `${variant ? classname[variant] : classname.light} ${disabled ? styles.disabled : ''}`,
+    className: (variant ? classname[variant] : classname.light) + " " + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, variant !== 'twitter' ? text : createElement("svg", {
     width: '18',
@@ -412,24 +427,23 @@ const FooterButton = ({
   })));
 };
 
-const Profile = ({
-  variant,
-  url,
-  alt,
-  size
-}) => {
-  const classname = {
+var Profile = function Profile(_ref) {
+  var variant = _ref.variant,
+    url = _ref.url,
+    alt = _ref.alt,
+    size = _ref.size;
+  var classname = {
     light: styles.profile,
     dark: styles.profileDark
   };
-  const getSize = () => {
-    let res = '30px';
+  var getSize = function getSize() {
+    var res = '30px';
     if (size === 'md') res = '50px';
     if (size === 'lg') res = '70px';
     return res;
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`
+    className: "" + (variant ? classname[variant] : classname.light)
   }, createElement("img", {
     src: url,
     alt: alt || 'Profile',
@@ -440,19 +454,18 @@ const Profile = ({
   }));
 };
 
-const Image = ({
-  variant,
-  url,
-  alt,
-  width,
-  height
-}) => {
-  const classname = {
+var Image = function Image(_ref) {
+  var variant = _ref.variant,
+    url = _ref.url,
+    alt = _ref.alt,
+    width = _ref.width,
+    height = _ref.height;
+  var classname = {
     light: styles.image,
     dark: styles.imageDark
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`
+    className: "" + (variant ? classname[variant] : classname.light)
   }, createElement("img", {
     src: url,
     alt: alt || 'Image',
@@ -463,82 +476,82 @@ const Image = ({
   }));
 };
 
-const Progress = ({
-  variant,
-  value,
-  max,
-  width
-}) => {
-  const classname = {
+var Progress = function Progress(_ref) {
+  var variant = _ref.variant,
+    value = _ref.value,
+    max = _ref.max,
+    width = _ref.width;
+  var classname = {
     light: styles.progress,
     dark: styles.progressDark
   };
-  const wrapperClass = {
+  var wrapperClass = {
     light: styles.progressWrapper,
     dark: styles.progressWrapperDark
   };
   return createElement("div", {
-    className: `${variant ? wrapperClass[variant] : wrapperClass.light}`,
+    className: "" + (variant ? wrapperClass[variant] : wrapperClass.light),
     style: {
       width: width
     }
   }, createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`,
+    className: "" + (variant ? classname[variant] : classname.light),
     style: {
       width: value / max * 100 + '%'
     }
   }));
 };
-const ProgressWDashes = ({
-  variant,
-  value,
-  max,
-  width
-}) => {
-  const classname = {
+var ProgressWDashes = function ProgressWDashes(_ref2) {
+  var variant = _ref2.variant,
+    value = _ref2.value,
+    max = _ref2.max,
+    width = _ref2.width;
+  var classname = {
     light: styles.progress,
     dark: styles.progressDark
   };
-  const wrapperClass = {
+  var wrapperClass = {
     light: styles.progressWrapper,
     dark: styles.progressWrapperDark
   };
   return createElement("div", {
-    className: `${variant ? wrapperClass[variant] : wrapperClass.light}`,
+    className: "" + (variant ? wrapperClass[variant] : wrapperClass.light),
     style: {
       width: width
     }
   }, createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`,
+    className: "" + (variant ? classname[variant] : classname.light),
     style: {
       width: value / max * 100 + '%'
     }
   }), createElement("section", {
     className: styles.progressWrapper__lines
-  }, [...Array(max)].map((_, i) => createElement("div", {
-    key: i
-  }))));
+  }, [].concat(Array(max)).map(function (_, i) {
+    return createElement("div", {
+      key: i
+    });
+  })));
 };
 
-const Tag = ({
-  theme,
-  icon,
-  text,
-  onClick: _onClick = () => {},
-  color,
-  className,
-  disabled
-}) => {
-  const classname = {
+var Tag = function Tag(_ref) {
+  var theme = _ref.theme,
+    icon = _ref.icon,
+    text = _ref.text,
+    _ref$onClick = _ref.onClick,
+    onClick = _ref$onClick === void 0 ? function () {} : _ref$onClick,
+    color = _ref.color,
+    className = _ref.className,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.tag,
     dark: styles.tagDark
   };
   if (!color) color = theme === 'dark' ? '#f9f9f9' : '#171717';
-  const handleClick = () => {
-    if (!disabled) _onClick();
+  var handleClick = function handleClick() {
+    if (!disabled) onClick();
   };
   return createElement("button", {
-    className: `${theme ? classname[theme] : classname.light} ${className || ''} ${disabled ? styles.disabled : ''}`,
+    className: (theme ? classname[theme] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     onClick: handleClick,
     style: {
       color: color
@@ -546,12 +559,11 @@ const Tag = ({
   }, text, icon || null);
 };
 
-const AddButton = ({
-  onClick,
-  disabled
-}) => {
+var AddButton = function AddButton(_ref) {
+  var onClick = _ref.onClick,
+    disabled = _ref.disabled;
   return createElement("button", {
-    className: `${styles.addButton} ${disabled ? styles.disabled : ''}`,
+    className: styles.addButton + " " + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, createElement("svg", {
     width: '17',
@@ -575,113 +587,119 @@ const AddButton = ({
   })))));
 };
 
-const IconVerified = () => createElement("svg", {
-  width: '12',
-  height: '12',
-  viewBox: '0 0 12 12',
-  fill: 'none',
-  xmlns: 'http://www.w3.org/2000/svg'
-}, createElement("g", {
-  clipPath: 'url(#clip0_2_944)'
-}, createElement("path", {
-  d: 'M3.13635 6L5.45453 8.5L10.0909 3.5',
-  stroke: '#DE1149',
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round'
-})), createElement("defs", null, createElement("clipPath", {
-  id: 'clip0_2_944'
-}, createElement("rect", {
-  width: '11.1273',
-  height: '12',
-  fill: 'white',
-  transform: 'translate(0.818176)'
-}))));
+var IconVerified = function IconVerified() {
+  return createElement("svg", {
+    width: '12',
+    height: '12',
+    viewBox: '0 0 12 12',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, createElement("g", {
+    clipPath: 'url(#clip0_2_944)'
+  }, createElement("path", {
+    d: 'M3.13635 6L5.45453 8.5L10.0909 3.5',
+    stroke: '#DE1149',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  })), createElement("defs", null, createElement("clipPath", {
+    id: 'clip0_2_944'
+  }, createElement("rect", {
+    width: '11.1273',
+    height: '12',
+    fill: 'white',
+    transform: 'translate(0.818176)'
+  }))));
+};
 
-const IconCompatible = () => createElement("svg", {
-  width: '12',
-  height: '11',
-  viewBox: '0 0 12 11',
-  fill: 'none',
-  xmlns: 'http://www.w3.org/2000/svg'
-}, createElement("path", {
-  d: 'M5.9965 8.874L2.9105 10.4965L3.5 7.06L1 4.6265L4.45 4.1265L5.993 1L7.536 4.1265L10.986 4.6265L8.486 7.06L9.0755 10.4965L5.9965 8.874Z',
-  stroke: '#009410',
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round'
-}));
+var IconCompatible = function IconCompatible() {
+  return createElement("svg", {
+    width: '12',
+    height: '11',
+    viewBox: '0 0 12 11',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, createElement("path", {
+    d: 'M5.9965 8.874L2.9105 10.4965L3.5 7.06L1 4.6265L4.45 4.1265L5.993 1L7.536 4.1265L10.986 4.6265L8.486 7.06L9.0755 10.4965L5.9965 8.874Z',
+    stroke: '#009410',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }));
+};
 
-const IconReport = () => createElement("svg", {
-  width: '11',
-  height: '10',
-  viewBox: '0 0 11 10',
-  fill: 'none',
-  xmlns: 'http://www.w3.org/2000/svg'
-}, createElement("path", {
-  d: 'M5.50351 4.01587V5.01587M5.50351 7.01587V7.02087',
-  stroke: '#FCCA46',
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round'
-}), createElement("path", {
-  d: 'M2.00351 9.01588H9.00351C9.16667 9.01473 9.32706 8.97369 9.47071 8.89631C9.61435 8.81894 9.73689 8.7076 9.82762 8.572C9.91835 8.43639 9.97452 8.28065 9.99124 8.11835C10.008 7.95605 9.9847 7.79213 9.92351 7.64088L6.37351 1.51588C6.28703 1.35958 6.16027 1.22929 6.00639 1.13857C5.85251 1.04785 5.67714 1 5.49851 1C5.31988 1 5.14451 1.04785 4.99064 1.13857C4.83676 1.22929 4.70999 1.35958 4.62351 1.51588L1.07351 7.64088C1.01348 7.78866 0.98968 7.94867 1.00409 8.10753C1.0185 8.26639 1.0707 8.4195 1.15634 8.55408C1.24198 8.68866 1.35857 8.80079 1.49638 8.88113C1.63418 8.96146 1.78921 9.00766 1.94851 9.01588',
-  stroke: '#FCCA46',
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round'
-}));
+var IconReport = function IconReport() {
+  return createElement("svg", {
+    width: '11',
+    height: '10',
+    viewBox: '0 0 11 10',
+    fill: 'none',
+    xmlns: 'http://www.w3.org/2000/svg'
+  }, createElement("path", {
+    d: 'M5.50351 4.01587V5.01587M5.50351 7.01587V7.02087',
+    stroke: '#FCCA46',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }), createElement("path", {
+    d: 'M2.00351 9.01588H9.00351C9.16667 9.01473 9.32706 8.97369 9.47071 8.89631C9.61435 8.81894 9.73689 8.7076 9.82762 8.572C9.91835 8.43639 9.97452 8.28065 9.99124 8.11835C10.008 7.95605 9.9847 7.79213 9.92351 7.64088L6.37351 1.51588C6.28703 1.35958 6.16027 1.22929 6.00639 1.13857C5.85251 1.04785 5.67714 1 5.49851 1C5.31988 1 5.14451 1.04785 4.99064 1.13857C4.83676 1.22929 4.70999 1.35958 4.62351 1.51588L1.07351 7.64088C1.01348 7.78866 0.98968 7.94867 1.00409 8.10753C1.0185 8.26639 1.0707 8.4195 1.15634 8.55408C1.24198 8.68866 1.35857 8.80079 1.49638 8.88113C1.63418 8.96146 1.78921 9.00766 1.94851 9.01588',
+    stroke: '#FCCA46',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round'
+  }));
+};
 
-const StepsBar = ({
-  active,
-  theme
-}) => createElement("div", {
-  className: `${theme === 'dark' ? styles.stepsBarDark : styles.stepsBar} ${active ? styles.stepsBarActive : ''}`
-});
-const StepsNumber = ({
-  number,
-  active,
-  theme
-}) => {
+var StepsBar = function StepsBar(_ref) {
+  var active = _ref.active,
+    theme = _ref.theme;
   return createElement("div", {
-    className: `${theme === 'dark' ? styles.stepsNumberDark : styles.stepsNumber} `
+    className: (theme === 'dark' ? styles.stepsBarDark : styles.stepsBar) + " " + (active ? styles.stepsBarActive : '')
+  });
+};
+var StepsNumber = function StepsNumber(_ref2) {
+  var number = _ref2.number,
+    active = _ref2.active,
+    theme = _ref2.theme;
+  return createElement("div", {
+    className: (theme === 'dark' ? styles.stepsNumberDark : styles.stepsNumber) + " "
   }, createElement("div", {
-    className: `${styles.stepsNumberInner} ${active ? styles.stepsNumberInnerActive : ''}`
+    className: styles.stepsNumberInner + " " + (active ? styles.stepsNumberInnerActive : '')
   }, number));
 };
-const Steps = ({
-  current,
-  total,
-  variant
-}) => {
+var Steps = function Steps(_ref3) {
+  var current = _ref3.current,
+    total = _ref3.total,
+    variant = _ref3.variant;
   return createElement("div", {
     className: variant === 'dark' ? styles.stepsDark : styles.steps
   }, createElement(StepsBar, {
     active: current > 0,
     theme: variant
-  }), Array.from(Array(total).keys()).map(step => createElement(Fragment, {
-    key: step
-  }, createElement(StepsNumber, {
-    number: step + 1,
-    active: current >= step + 1,
-    theme: variant
-  }), step < total - 1 && createElement(StepsBar, {
-    active: current > step + 1,
-    theme: variant
-  }))), createElement(StepsBar, {
+  }), Array.from(Array(total).keys()).map(function (step) {
+    return createElement(Fragment, {
+      key: step
+    }, createElement(StepsNumber, {
+      number: step + 1,
+      active: current >= step + 1,
+      theme: variant
+    }), step < total - 1 && createElement(StepsBar, {
+      active: current > step + 1,
+      theme: variant
+    }));
+  }), createElement(StepsBar, {
     active: false,
     theme: variant
   }));
 };
 
-const FlatBox = ({
-  variant,
-  width,
-  height,
-  children
-}) => {
-  const classname = {
+var FlatBox = function FlatBox(_ref) {
+  var variant = _ref.variant,
+    width = _ref.width,
+    height = _ref.height,
+    children = _ref.children;
+  var classname = {
     light: styles.flatBox,
     dark: styles.flatBoxDark
   };
   return createElement("div", {
-    className: `${variant ? classname[variant] : classname.light}`,
+    className: "" + (variant ? classname[variant] : classname.light),
     style: {
       width: width,
       height: height
@@ -689,29 +707,36 @@ const FlatBox = ({
   }, children);
 };
 
-const Navbar = ({
-  theme,
-  variant,
-  buttons,
-  setTheme
-}) => {
-  const [open, setOpen] = useState(false);
-  const NavbarContent = () => createElement("section", null, variant === 'theme' ? createElement(ThemeSwitch, {
-    value: theme,
-    setSwitch: setTheme
-  }) : variant === 'buttons' ? buttons === null || buttons === void 0 ? void 0 : buttons.map((button, index) => createElement(Button, {
-    key: index,
-    text: button[0],
-    onClick: () => {
-      var _window;
-      return (_window = window) === null || _window === void 0 ? void 0 : _window.open(button[1], '_blank', 'noopener,noreferrer');
-    },
-    variant: theme ? 'dark' : 'light'
-  })) : null);
+var Navbar = function Navbar(_ref) {
+  var theme = _ref.theme,
+    variant = _ref.variant,
+    buttons = _ref.buttons,
+    setTheme = _ref.setTheme;
+  var _React$useState = useState(false),
+    open = _React$useState[0],
+    setOpen = _React$useState[1];
+  var NavbarContent = function NavbarContent() {
+    return createElement("section", null, variant === 'theme' ? createElement(ThemeSwitch, {
+      value: theme,
+      setSwitch: setTheme
+    }) : variant === 'buttons' ? buttons === null || buttons === void 0 ? void 0 : buttons.map(function (button, index) {
+      return createElement(Button, {
+        key: index,
+        text: button[0],
+        onClick: function onClick() {
+          var _window;
+          return (_window = window) === null || _window === void 0 ? void 0 : _window.open(button[1], '_blank', 'noopener,noreferrer');
+        },
+        variant: theme ? 'dark' : 'light'
+      });
+    }) : null);
+  };
   return createElement("nav", {
-    className: `${theme ? styles.navbarDark : styles.navbarLight}`
+    className: "" + (theme ? styles.navbarDark : styles.navbarLight)
   }, createElement("section", null, createElement("h2", null, "MAJR ", createElement("b", null, "DAO")), !open ? createElement("svg", {
-    onClick: () => setOpen(!open),
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
     xmlns: 'http://www.w3.org/2000/svg',
     width: '24',
     height: '24',
@@ -741,7 +766,9 @@ const Navbar = ({
     x2: '20',
     y2: '18'
   })) : createElement("svg", {
-    onClick: () => setOpen(!open),
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
     xmlns: 'http://www.w3.org/2000/svg',
     width: '24',
     height: '24',
@@ -768,82 +795,82 @@ const Navbar = ({
   }))), createElement(NavbarContent, null), open && createElement("section", null), open ? createElement(NavbarContent, null) : null);
 };
 
-const Footer = ({
-  variant,
-  links,
-  twitter
-}) => {
-  const classname = {
+var Footer = function Footer(_ref) {
+  var variant = _ref.variant,
+    links = _ref.links,
+    twitter = _ref.twitter;
+  var classname = {
     light: styles.footer,
     dark: styles.footerDark
   };
   return createElement("footer", {
-    className: `${variant ? classname[variant] : classname.light}`
-  }, createElement("section", null, links.map((link, index) => createElement(FooterButton, {
-    key: index,
-    onClick: () => window.open(link[1], '_blank'),
-    text: link[0],
-    variant: variant
-  }))), createElement("section", null, twitter ? createElement(FooterButton, {
-    onClick: () => window.open(twitter, '_blank'),
+    className: "" + (variant ? classname[variant] : classname.light)
+  }, createElement("section", null, links.map(function (link, index) {
+    return createElement(FooterButton, {
+      key: index,
+      onClick: function onClick() {
+        return window.open(link[1], '_blank');
+      },
+      text: link[0],
+      variant: variant
+    });
+  })), createElement("section", null, twitter ? createElement(FooterButton, {
+    onClick: function onClick() {
+      return window.open(twitter, '_blank');
+    },
     text: 'Twitter',
     variant: 'twitter'
   }) : null));
 };
 
-const Circle = ({
-  variant,
-  icon,
-  active,
-  onClick,
-  className,
-  disabled
-}) => {
-  const classes = {
+var Circle = function Circle(_ref) {
+  var variant = _ref.variant,
+    icon = _ref.icon,
+    active = _ref.active,
+    onClick = _ref.onClick,
+    className = _ref.className,
+    disabled = _ref.disabled;
+  var classes = {
     yellow: styles.circleYellow,
     blue: styles.circleBlue,
     red: styles.circleRed
   };
   return React__default.createElement("button", {
-    className: `${classes[variant]} ${active ? styles.circleActive : ''} ${className || ''} ${disabled ? styles.disabled : ''}
-      `,
+    className: classes[variant] + " " + (active ? styles.circleActive : '') + " " + (className || '') + " " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, icon);
 };
 
-const ButtonShadow = ({
-  text,
-  onClick,
-  variant,
-  rounded,
-  icon,
-  iconPosition,
-  className,
-  size,
-  altFont,
-  color,
-  disabled
-}) => {
-  const classname = {
+var ButtonShadow = function ButtonShadow(_ref) {
+  var text = _ref.text,
+    onClick = _ref.onClick,
+    variant = _ref.variant,
+    rounded = _ref.rounded,
+    icon = _ref.icon,
+    iconPosition = _ref.iconPosition,
+    className = _ref.className,
+    size = _ref.size,
+    altFont = _ref.altFont,
+    color = _ref.color,
+    disabled = _ref.disabled;
+  var classname = {
     light: styles.buttonShadow,
     dark: styles.buttonShadowDark
   };
-  const colors = {
+  var colors = {
     yellow: styles.buttonShadowYellow,
     blue: styles.buttonShadowBlue,
     red: styles.buttonShadowRed,
     green: styles.buttonShadowGreen,
     black: styles.buttonShadowBlack
   };
-  const sizesClassNames = {
+  var sizesClassNames = {
     small: styles.buttonSm,
     normal: styles.buttonMd,
     fillWidth: styles.buttonFill
   };
   return createElement("button", {
-    className: `${variant ? classname[variant] : classname.light} ${rounded ? styles.rounded : ''} ${className || ''} ${size ? sizesClassNames[size] : ''} ${altFont ? styles.altFont : ''} ${color ? colors[color] : ''}  
-        ${disabled ? styles.disabled : ''}
-      `,
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + " " + (color ? colors[color] : '') + "  \n        " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, iconPosition === 'left' && icon, text, iconPosition === 'right' && icon);
 };
