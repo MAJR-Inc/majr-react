@@ -8,6 +8,8 @@ interface FlatBoxProps {
   children: React.ReactNode
   className?: string
   onClick?: () => void
+  onMouseEnter?: () => void
+  onMouseLeave?: () => void
 }
 
 export const FlatBox = ({
@@ -16,7 +18,9 @@ export const FlatBox = ({
   height,
   children,
   className,
-  onClick = () => {}
+  onClick = () => {},
+  onMouseEnter = () => {},
+  onMouseLeave = () => {}
 }: FlatBoxProps) => {
   const classname: any = {
     light: styles.flatBox,
@@ -32,6 +36,8 @@ export const FlatBox = ({
         height: height
       }}
       onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {children}
     </div>

@@ -696,17 +696,21 @@ var FlatBox = function FlatBox(_ref) {
   var variant = _ref.variant,
     width = _ref.width,
     height = _ref.height,
-    children = _ref.children;
+    children = _ref.children,
+    className = _ref.className,
+    _ref$onClick = _ref.onClick,
+    onClick = _ref$onClick === void 0 ? function () {} : _ref$onClick;
   var classname = {
     light: styles.flatBox,
     dark: styles.flatBoxDark
   };
   return React.createElement("div", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (className || ''),
     style: {
       width: width,
       height: height
-    }
+    },
+    onClick: onClick
   }, children);
 };
 
