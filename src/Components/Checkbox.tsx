@@ -6,13 +6,15 @@ interface CheckboxProps {
   setCheckbox: (target: boolean[]) => void
   index: number
   variant?: 'light' | 'dark'
+  disabled?: boolean
 }
 
 export const Checkbox = ({
   checkbox,
   setCheckbox,
   index,
-  variant
+  variant,
+  disabled
 }: CheckboxProps) => {
   const classname: any = {
     light: styles.checkbox,
@@ -29,11 +31,11 @@ export const Checkbox = ({
       onClick={() => handleClick()}
     >
       <div
-        className={
+        className={`${
           checkbox[index]
             ? styles.checkbox__innerActive
             : styles.checkbox__inner
-        }
+        } ${disabled ? styles.disabled : ''}`}
       />
     </div>
   )

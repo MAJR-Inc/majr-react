@@ -6,13 +6,17 @@ interface InputProps {
   setText: (text: string) => void
   variant?: 'light' | 'dark'
   placeholder?: string
+  className?: string
+  disabled?: boolean
 }
 
 export const Textarea = ({
   text,
   setText,
   variant,
-  placeholder
+  placeholder,
+  className,
+  disabled
 }: InputProps) => {
   const classname: any = {
     light: styles.textarea,
@@ -20,7 +24,9 @@ export const Textarea = ({
   }
   return (
     <textarea
-      className={`${variant ? classname[variant] : classname.light}`}
+      className={`${variant ? classname[variant] : classname.light} ${
+        className || ''
+      } ${disabled ? styles.disabled : ''}`}
       value={text}
       onChange={(e) => setText(e.target.value)}
       placeholder={placeholder || 'Enter text'}

@@ -4,20 +4,30 @@ interface SpotlightProps {
   clicked: boolean
   setClicked: (target: boolean) => void
   variant?: 'light' | 'dark'
+  disabled?: boolean
+  className?: string
 }
 
-export const Spotlight = ({ clicked, setClicked, variant }: SpotlightProps) => {
+export const Spotlight = ({
+  clicked,
+  setClicked,
+  variant,
+  disabled,
+  className
+}: SpotlightProps) => {
   const classname: any = {
     light: styles.spotlight,
     dark: styles.spotlightDark
   }
   const handleClick = () => {
-    setClicked(!clicked)
+    if (!disabled) setClicked(!clicked)
   }
 
   return (
     <div
-      className={`${variant ? classname[variant] : classname.light}`}
+      className={`${variant ? classname[variant] : classname.light} ${
+        className || ''
+      }${disabled ? styles.disabled : ''}`}
       onClick={() => handleClick()}
     >
       <div

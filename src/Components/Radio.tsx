@@ -6,9 +6,18 @@ interface RadioProps {
   setRadio: (target: boolean[]) => void
   index: number
   variant?: 'light' | 'dark'
+  className?: string
+  disabled?: boolean
 }
 
-export const Radio = ({ radio, setRadio, index, variant }: RadioProps) => {
+export const Radio = ({
+  radio,
+  setRadio,
+  index,
+  variant,
+  disabled,
+  className
+}: RadioProps) => {
   const classname: any = {
     light: styles.radio,
     dark: styles.radioDark
@@ -22,7 +31,9 @@ export const Radio = ({ radio, setRadio, index, variant }: RadioProps) => {
 
   return (
     <div
-      className={`${variant ? classname[variant] : classname.light}`}
+      className={`${variant ? classname[variant] : classname.light} ${
+        className || ''
+      } ${disabled ? styles.disabled : ''}`}
       onClick={() => handleClick()}
     >
       <div

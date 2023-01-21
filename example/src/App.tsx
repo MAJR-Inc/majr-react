@@ -148,9 +148,15 @@ const App = () => {
         backgroundColor: theme ? '#33383D' : '#f9f9f9'
       }}
     >
-      <Button onClick={() => {}} text='Main btn' variant='main' />
+      <Button
+        disabled={false}
+        onClick={() => {}}
+        text='Main btn'
+        variant='main'
+      />
       <br />
       <Button
+        disabled={true}
         onClick={() => {}}
         text='Light btn'
         variant={theme ? 'dark' : 'light'}
@@ -160,6 +166,7 @@ const App = () => {
         text='Link - Def.'
         link='https://github.com'
         variant={theme ? 'dark' : 'light'}
+        disabled={true}
       />
       <Link text='Animated' link='https://github.com' variant='animated' />
       <br />
@@ -196,6 +203,7 @@ const App = () => {
         setText={setUsername}
         placeholder='Enter username'
         variant={theme ? 'dark' : 'light'}
+        disabled={true}
       />
       <Input
         text={username}

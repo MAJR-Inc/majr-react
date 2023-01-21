@@ -12,38 +12,47 @@ interface ButtonProps {
   className?: string
   size?: 'small' | 'normal' | 'fillWidth'
   altFont?: boolean
+  disabled?: boolean
 }
 
-export const Button = ({ text, onClick, variant, rounded, icon, iconPosition, className, size, altFont }: ButtonProps) => {
+export const Button = ({
+  text,
+  onClick,
+  variant,
+  rounded,
+  icon,
+  iconPosition,
+  className,
+  size,
+  altFont,
+  disabled
+}: ButtonProps) => {
   const classname: any = {
     light: styles.button,
     dark: styles.buttonDark,
     main: styles.buttonMain,
     highlight: styles.buttonHighlight,
     highlightdark: styles.buttonHighlightDark,
-    green: styles.buttonGreen,
+    green: styles.buttonGreen
   }
   const sizesClassNames: any = {
     small: styles.buttonSm,
     normal: styles.buttonMd,
-    fillWidth: styles.buttonFill,
+    fillWidth: styles.buttonFill
   }
   return (
     <button
       className={`${variant ? classname[variant] : classname.light} ${
         rounded ? styles.rounded : ''
       } ${className || ''} ${size ? sizesClassNames[size] : ''} ${
-        altFont ? styles.altFont : ''}  
+        altFont ? styles.altFont : ''
+      } ${disabled ? styles.disabled : ''}
       `}
       onClick={onClick}
     >
-      {
-        iconPosition === 'left' && icon
-      }
+      {iconPosition === 'left' && icon}
       {text}
-      {
-        iconPosition === 'right' && icon
-      }
+      {iconPosition === 'right' && icon}
     </button>
   )
 }

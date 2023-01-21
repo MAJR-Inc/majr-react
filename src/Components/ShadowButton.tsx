@@ -13,6 +13,7 @@ interface ButtonProps {
   size?: 'small' | 'normal' | 'fillWidth'
   altFont?: boolean
   color?: 'yellow' | 'blue' | 'red' | 'green' | 'black'
+  disabled?: boolean
 }
 
 export const ButtonShadow = ({
@@ -25,7 +26,8 @@ export const ButtonShadow = ({
   className,
   size,
   altFont,
-  color
+  color,
+  disabled
 }: ButtonProps) => {
   const classname: any = {
     light: styles.buttonShadow,
@@ -50,6 +52,7 @@ export const ButtonShadow = ({
       } ${className || ''} ${size ? sizesClassNames[size] : ''} ${
         altFont ? styles.altFont : ''
       } ${color ? colors[color] : ''}  
+        ${disabled ? styles.disabled : ''}
       `}
       onClick={onClick}
     >

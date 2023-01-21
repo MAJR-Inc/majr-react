@@ -7,6 +7,7 @@ interface CircleProps {
   active: boolean
   onClick: () => void
   className?: string
+  disabled?: boolean
 }
 
 export const Circle = ({
@@ -14,7 +15,8 @@ export const Circle = ({
   icon,
   active,
   onClick,
-  className
+  className,
+  disabled
 }: CircleProps) => {
   const classes = {
     yellow: styles.circleYellow,
@@ -25,7 +27,8 @@ export const Circle = ({
     <button
       className={`${classes[variant]} ${active ? styles.circleActive : ''} ${
         className || ''
-      }`}
+      } ${disabled ? styles.disabled : ''}
+      `}
       onClick={onClick}
     >
       {icon}

@@ -6,9 +6,18 @@ interface SelectProps {
   setSelect: (target: number) => void
   def: string
   variant?: 'light' | 'dark'
+  className?: string
+  disabled?: boolean
 }
 
-export const Select = ({ select, setSelect, def, variant }: SelectProps) => {
+export const Select = ({
+  select,
+  setSelect,
+  def,
+  variant,
+  disabled,
+  className
+}: SelectProps) => {
   const [open, setOpen] = React.useState(false)
   const [selected, setSelected] = React.useState(-1)
   const handleClick = (index: number) => {
@@ -19,9 +28,9 @@ export const Select = ({ select, setSelect, def, variant }: SelectProps) => {
   return (
     <div className={styles.select}>
       <div
-        className={
+        className={`${
           variant === 'dark' ? styles.select__innerDark : styles.select__inner
-        }
+        } ${className || ''} ${disabled ? styles.disabled : ''}`}
         onClick={() => setOpen(!open)}
       >
         {selected !== -1 ? select[selected] : def || 'Select'}

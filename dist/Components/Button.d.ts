@@ -9,6 +9,7 @@ interface ButtonProps {
     className?: string;
     size?: 'small' | 'normal' | 'fillWidth';
     altFont?: boolean;
+    disabled?: boolean;
 }
-export declare const Button: ({ text, onClick, variant, rounded, icon, iconPosition, className, size, altFont }: ButtonProps) => JSX.Element;
+export declare const Button: ({ text, onClick, variant, rounded, icon, iconPosition, className, size, altFont, disabled }: ButtonProps) => JSX.Element;
 export {};

@@ -5,9 +5,15 @@ interface FooterProps {
   variant?: 'light' | 'dark' | 'twitter'
   text: string
   onClick?: () => void
+  disabled?: boolean
 }
 
-export const FooterButton = ({ variant, text, onClick }: FooterProps) => {
+export const FooterButton = ({
+  variant,
+  text,
+  onClick,
+  disabled
+}: FooterProps) => {
   const classname: any = {
     light: styles.footerButton,
     dark: styles.footerButtonDark,
@@ -15,7 +21,9 @@ export const FooterButton = ({ variant, text, onClick }: FooterProps) => {
   }
   return (
     <button
-      className={`${variant ? classname[variant] : classname.light}`}
+      className={`${variant ? classname[variant] : classname.light} ${
+        disabled ? styles.disabled : ''
+      }`}
       onClick={onClick}
     >
       {variant !== 'twitter' ? (

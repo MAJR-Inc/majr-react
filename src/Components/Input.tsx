@@ -12,13 +12,17 @@ interface InputProps {
     | 'search'
     | 'searchDark'
   placeholder?: string
+  disabled?: boolean
+  className?: string
 }
 
 export const Input = ({
   value,
   onChange,
   variant,
-  placeholder
+  placeholder,
+  disabled,
+  className
 }: InputProps) => {
   const classname: any = {
     light: styles.input,
@@ -33,7 +37,9 @@ export const Input = ({
     <section className={`${styles.inputWrapper}`}>
       <input
         type={variant?.includes('password') && !seePass ? 'password' : 'text'}
-        className={`${variant ? classname[variant] : classname.light}`}
+        className={`${variant ? classname[variant] : classname.light} ${
+          disabled ? styles.disabled : ''
+        } ${className || ''}`}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder || 'Enter text'}

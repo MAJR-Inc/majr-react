@@ -6,9 +6,17 @@ interface ButtonProps {
   text: string
   link: string
   variant?: 'light' | 'dark' | 'animated'
+  disabled?: boolean
+  className?: string
 }
 
-export const Link = ({ text, link, variant }: ButtonProps) => {
+export const Link = ({
+  text,
+  link,
+  variant,
+  className,
+  disabled
+}: ButtonProps) => {
   const classname: any = {
     light: styles.link,
     dark: styles.linkDark,
@@ -16,7 +24,9 @@ export const Link = ({ text, link, variant }: ButtonProps) => {
   }
   return (
     <a
-      className={`${variant ? classname[variant] : classname.light}`}
+      className={`${variant ? classname[variant] : classname.light} ${
+        className || ''
+      } ${disabled ? styles.disabled : ''}`}
       onClick={() => window.open(link, '_blank')}
     >
       {text}

@@ -952,6 +952,11 @@
   stroke: #f9f9f9 !important;
 }
 
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .navbarLight, .navbarDark {
     display: flex;

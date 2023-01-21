@@ -3,7 +3,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var React = require('react');
 var React__default = _interopDefault(React);
 
-var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonShadow":"_styles-module__buttonShadow__2Ei4E","buttonDark":"_styles-module__buttonDark__2kUFE","buttonGreen":"_styles-module__buttonGreen__oBX5E","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","linkDark":"_styles-module__linkDark__toeZN","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonMain":"_styles-module__iconButtonMain__KRwUs","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR","flatBox":"_styles-module__flatBox__1J_Qp","flatBoxDark":"_styles-module__flatBoxDark__3aasJ","navbarLight":"_styles-module__navbarLight__2o0Ql","navbarDark":"_styles-module__navbarDark__eP6C_","footer":"_styles-module__footer__24OKz","footerDark":"_styles-module__footerDark__1PLfW","circle":"_styles-module__circle__3PfrK","buttonShadowBlack":"_styles-module__buttonShadowBlack__3DJzH","buttonShadowGreen":"_styles-module__buttonShadowGreen__29kiG","buttonShadowYellow":"_styles-module__buttonShadowYellow__6iYFk","buttonShadowBlue":"_styles-module__buttonShadowBlue__KYpse","buttonShadowRed":"_styles-module__buttonShadowRed__3uH9M","circleYellow":"_styles-module__circleYellow__2WdWD","circleBlue":"_styles-module__circleBlue__2C_yZ","circleRed":"_styles-module__circleRed__e7aeM","circleActive":"_styles-module__circleActive__1oQ1A","buttonSm":"_styles-module__buttonSm__2b7Ys","altFont":"_styles-module__altFont__2QxlF","buttonFill":"_styles-module__buttonFill__3X8zV"};
+var styles = {"flat-light":"_styles-module__flat-light__37uGn","inputLight":"_styles-module__inputLight__5gfdI","button":"_styles-module__button__2hTXI","buttonShadow":"_styles-module__buttonShadow__2Ei4E","buttonDark":"_styles-module__buttonDark__2kUFE","buttonGreen":"_styles-module__buttonGreen__oBX5E","buttonSecondary":"_styles-module__buttonSecondary__1Gipg","buttonMain":"_styles-module__buttonMain__1iiPs","linkAnimated":"_styles-module__linkAnimated__vrVpH","link":"_styles-module__link__71S8l","linkDark":"_styles-module__linkDark__toeZN","iconButton":"_styles-module__iconButton__2570K","navbarBtnActive":"_styles-module__navbarBtnActive__1W0H_","navbarBtnActiveDark":"_styles-module__navbarBtnActiveDark__9TPHE","navbarBtn":"_styles-module__navbarBtn__2gBhj","iconButtonMain":"_styles-module__iconButtonMain__KRwUs","iconButtonDark":"_styles-module__iconButtonDark__1vMvm","navbarBtnDark":"_styles-module__navbarBtnDark__1_LN9","rounded":"_styles-module__rounded__3gdqJ","inputWrapper":"_styles-module__inputWrapper__1V-hJ","input":"_styles-module__input__2IYfc","textarea":"_styles-module__textarea__24IuX","inputDark":"_styles-module__inputDark__2johG","textareaDark":"_styles-module__textareaDark__2tmLN","textareaproperties":"_styles-module__textareaproperties__b3Ocf","radio":"_styles-module__radio__kkn6a","spotlight":"_styles-module__spotlight__1SOsU","spotlightDark":"_styles-module__spotlightDark__2YjhR","checkbox":"_styles-module__checkbox__3kknd","checkboxDark":"_styles-module__checkboxDark__2eX8z","radioDark":"_styles-module__radioDark__3QjCQ","radio__inner":"_styles-module__radio__inner__2t5pY","spotlight__inner":"_styles-module__spotlight__inner__hynTg","spotlight__innerActive":"_styles-module__spotlight__innerActive__1WUYa","checkbox__inner":"_styles-module__checkbox__inner__3O63b","radio__innerActive":"_styles-module__radio__innerActive__1y9gd","checkbox__innerActive":"_styles-module__checkbox__innerActive__2nnyc","select__inner":"_styles-module__select__inner__K4kjf","select__innerDark":"_styles-module__select__innerDark__3oq5m","select__options":"_styles-module__select__options__2OWeN","select__optionsDark":"_styles-module__select__optionsDark__2fH9V","switch":"_styles-module__switch__1zvwZ","switchDark":"_styles-module__switchDark__204Pu","switch__inner":"_styles-module__switch__inner__yLiXT","switch__innerActive":"_styles-module__switch__innerActive__1AOzu","footerButton":"_styles-module__footerButton__17aKo","footerButtonTwitter":"_styles-module__footerButtonTwitter__qpthA","footerButtonDark":"_styles-module__footerButtonDark__3-NH5","profile":"_styles-module__profile__2FLLu","image":"_styles-module__image__2hdkJ","imageDark":"_styles-module__imageDark___VMFw","profileDark":"_styles-module__profileDark__22AHo","switch2":"_styles-module__switch2__3isoC","switch2Dark":"_styles-module__switch2Dark__VPqNN","switch2__inner":"_styles-module__switch2__inner__1PWur","switch2__innerActive":"_styles-module__switch2__innerActive__2Qt4S","progressWrapper":"_styles-module__progressWrapper__fuT1A","progressWrapperDark":"_styles-module__progressWrapperDark__3Awf9","progress":"_styles-module__progress__2EqlW","progressDark":"_styles-module__progressDark__1YQhb","progressWrapper__lines":"_styles-module__progressWrapper__lines__f2cuS","tag":"_styles-module__tag__kR9pS","tagDark":"_styles-module__tagDark__3ocXl","addButton":"_styles-module__addButton__HUrcY","steps":"_styles-module__steps__tX7xC","stepsDark":"_styles-module__stepsDark__3hKP7","stepsBar":"_styles-module__stepsBar__3G1JP","stepsBarDark":"_styles-module__stepsBarDark__27qPP","stepsBarActive":"_styles-module__stepsBarActive__3zoqI","stepsNumber":"_styles-module__stepsNumber__i6jAu","stepsNumberDark":"_styles-module__stepsNumberDark__3Y_ou","stepsNumberInner":"_styles-module__stepsNumberInner__2MjMj","stepsNumberInnerActive":"_styles-module__stepsNumberInnerActive__2j8cR","flatBox":"_styles-module__flatBox__1J_Qp","flatBoxDark":"_styles-module__flatBoxDark__3aasJ","navbarLight":"_styles-module__navbarLight__2o0Ql","navbarDark":"_styles-module__navbarDark__eP6C_","footer":"_styles-module__footer__24OKz","footerDark":"_styles-module__footerDark__1PLfW","circle":"_styles-module__circle__3PfrK","buttonShadowBlack":"_styles-module__buttonShadowBlack__3DJzH","buttonShadowGreen":"_styles-module__buttonShadowGreen__29kiG","buttonShadowYellow":"_styles-module__buttonShadowYellow__6iYFk","buttonShadowBlue":"_styles-module__buttonShadowBlue__KYpse","buttonShadowRed":"_styles-module__buttonShadowRed__3uH9M","circleYellow":"_styles-module__circleYellow__2WdWD","circleBlue":"_styles-module__circleBlue__2C_yZ","circleRed":"_styles-module__circleRed__e7aeM","circleActive":"_styles-module__circleActive__1oQ1A","disabled":"_styles-module__disabled__2RWmX","buttonSm":"_styles-module__buttonSm__2b7Ys","altFont":"_styles-module__altFont__2QxlF","buttonFill":"_styles-module__buttonFill__3X8zV"};
 
 var Button = function Button(_ref) {
   var text = _ref.text,
@@ -14,7 +14,8 @@ var Button = function Button(_ref) {
     iconPosition = _ref.iconPosition,
     className = _ref.className,
     size = _ref.size,
-    altFont = _ref.altFont;
+    altFont = _ref.altFont,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.button,
     dark: styles.buttonDark,
@@ -29,7 +30,7 @@ var Button = function Button(_ref) {
     fillWidth: styles.buttonFill
   };
   return React.createElement("button", {
-    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + "  \n      ",
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + " " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, iconPosition === 'left' && icon, text, iconPosition === 'right' && icon);
 };
@@ -37,14 +38,16 @@ var Button = function Button(_ref) {
 var Link = function Link(_ref) {
   var text = _ref.text,
     link = _ref.link,
-    variant = _ref.variant;
+    variant = _ref.variant,
+    className = _ref.className,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.link,
     dark: styles.linkDark,
     animated: styles.linkAnimated
   };
   return React.createElement("a", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     onClick: function onClick() {
       return window.open(link, '_blank');
     }
@@ -55,14 +58,15 @@ var IconButton = function IconButton(_ref) {
   var icon = _ref.icon,
     onClick = _ref.onClick,
     variant = _ref.variant,
-    rounded = _ref.rounded;
+    rounded = _ref.rounded,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.iconButton,
     dark: styles.iconButtonDark,
     main: styles.iconButtonMain
   };
   return React.createElement("button", {
-    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : ''),
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, icon);
 };
@@ -89,7 +93,9 @@ var Input = function Input(_ref) {
   var value = _ref.value,
     _onChange = _ref.onChange,
     variant = _ref.variant,
-    placeholder = _ref.placeholder;
+    placeholder = _ref.placeholder,
+    disabled = _ref.disabled,
+    className = _ref.className;
   var classname = {
     light: styles.input,
     dark: styles.inputDark,
@@ -105,7 +111,7 @@ var Input = function Input(_ref) {
     className: "" + styles.inputWrapper
   }, React.createElement("input", {
     type: variant !== null && variant !== void 0 && variant.includes('password') && !seePass ? 'password' : 'text',
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (disabled ? styles.disabled : '') + " " + (className || ''),
     value: value,
     onChange: function onChange(e) {
       return _onChange(e.target.value);
@@ -172,13 +178,15 @@ var Textarea = function Textarea(_ref) {
   var text = _ref.text,
     setText = _ref.setText,
     variant = _ref.variant,
-    placeholder = _ref.placeholder;
+    placeholder = _ref.placeholder,
+    className = _ref.className,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.textarea,
     dark: styles.textareaDark
   };
   return React.createElement("textarea", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     value: text,
     onChange: function onChange(e) {
       return setText(e.target.value);
@@ -191,7 +199,9 @@ var Radio = function Radio(_ref) {
   var radio = _ref.radio,
     setRadio = _ref.setRadio,
     index = _ref.index,
-    variant = _ref.variant;
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
   var classname = {
     light: styles.radio,
     dark: styles.radioDark
@@ -204,7 +214,7 @@ var Radio = function Radio(_ref) {
     setRadio(newRadio);
   };
   return React.createElement("div", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     onClick: function onClick() {
       return handleClick();
     }
@@ -217,7 +227,8 @@ var Checkbox = function Checkbox(_ref) {
   var checkbox = _ref.checkbox,
     setCheckbox = _ref.setCheckbox,
     index = _ref.index,
-    variant = _ref.variant;
+    variant = _ref.variant,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.checkbox,
     dark: styles.checkboxDark
@@ -233,23 +244,25 @@ var Checkbox = function Checkbox(_ref) {
       return handleClick();
     }
   }, React.createElement("div", {
-    className: checkbox[index] ? styles.checkbox__innerActive : styles.checkbox__inner
+    className: (checkbox[index] ? styles.checkbox__innerActive : styles.checkbox__inner) + " " + (disabled ? styles.disabled : '')
   }));
 };
 
 var Spotlight = function Spotlight(_ref) {
   var clicked = _ref.clicked,
     setClicked = _ref.setClicked,
-    variant = _ref.variant;
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
   var classname = {
     light: styles.spotlight,
     dark: styles.spotlightDark
   };
   var handleClick = function handleClick() {
-    setClicked(!clicked);
+    if (!disabled) setClicked(!clicked);
   };
   return React.createElement("div", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (className || '') + (disabled ? styles.disabled : ''),
     onClick: function onClick() {
       return handleClick();
     }
@@ -276,7 +289,9 @@ var Select = function Select(_ref) {
   var select = _ref.select,
     setSelect = _ref.setSelect,
     def = _ref.def,
-    variant = _ref.variant;
+    variant = _ref.variant,
+    disabled = _ref.disabled,
+    className = _ref.className;
   var _React$useState = React.useState(false),
     open = _React$useState[0],
     setOpen = _React$useState[1];
@@ -291,7 +306,7 @@ var Select = function Select(_ref) {
   return React.createElement("div", {
     className: styles.select
   }, React.createElement("div", {
-    className: variant === 'dark' ? styles.select__innerDark : styles.select__inner,
+    className: (variant === 'dark' ? styles.select__innerDark : styles.select__inner) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
     onClick: function onClick() {
       return setOpen(!open);
     }
@@ -324,12 +339,15 @@ var Select = function Select(_ref) {
 
 var ThemeSwitch = function ThemeSwitch(_ref) {
   var value = _ref.value,
-    setSwitch = _ref.setSwitch;
+    setSwitch = _ref.setSwitch,
+    disabled = _ref.disabled,
+    className = _ref.className;
+  var handleClick = function handleClick() {
+    if (!disabled) setSwitch(!value);
+  };
   return React.createElement("div", {
-    className: "" + (!value ? styles["switch"] : styles.switchDark),
-    onClick: function onClick() {
-      return setSwitch(!value);
-    }
+    className: (!value ? styles["switch"] : styles.switchDark) + "\n        " + (className || '') + "\n        " + (disabled ? styles.disabled : '') + "\n      ",
+    onClick: handleClick
   }, React.createElement("div", {
     className: !value ? styles.switch__innerActive : styles.switch__inner
   }, React.createElement("svg", {
@@ -369,12 +387,15 @@ var ThemeSwitch = function ThemeSwitch(_ref) {
 var SwitchComponent = function SwitchComponent(_ref2) {
   var value = _ref2.value,
     setSwitch = _ref2.setSwitch,
-    variant = _ref2.variant;
+    variant = _ref2.variant,
+    className = _ref2.className,
+    disabled = _ref2.disabled;
+  var handleClick = function handleClick() {
+    if (!disabled) setSwitch(!value);
+  };
   return React.createElement("div", {
-    className: "" + (variant === 'light' ? styles.switch2 : styles.switch2Dark),
-    onClick: function onClick() {
-      return setSwitch(!value);
-    }
+    className: (variant === 'light' ? styles.switch2 : styles.switch2Dark) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
+    onClick: handleClick
   }, React.createElement("div", {
     className: value ? styles.switch2__innerActive : styles.switch2__inner
   }));
@@ -383,14 +404,15 @@ var SwitchComponent = function SwitchComponent(_ref2) {
 var FooterButton = function FooterButton(_ref) {
   var variant = _ref.variant,
     text = _ref.text,
-    onClick = _ref.onClick;
+    onClick = _ref.onClick,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.footerButton,
     dark: styles.footerButtonDark,
     twitter: styles.footerButtonTwitter
   };
   return React.createElement("button", {
-    className: "" + (variant ? classname[variant] : classname.light),
+    className: (variant ? classname[variant] : classname.light) + " " + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, variant !== 'twitter' ? text : React.createElement("svg", {
     width: '18',
@@ -518,16 +540,22 @@ var Tag = function Tag(_ref) {
   var theme = _ref.theme,
     icon = _ref.icon,
     text = _ref.text,
-    onClick = _ref.onClick,
-    color = _ref.color;
+    _ref$onClick = _ref.onClick,
+    onClick = _ref$onClick === void 0 ? function () {} : _ref$onClick,
+    color = _ref.color,
+    className = _ref.className,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.tag,
     dark: styles.tagDark
   };
   if (!color) color = theme === 'dark' ? '#f9f9f9' : '#171717';
+  var handleClick = function handleClick() {
+    if (!disabled) onClick();
+  };
   return React.createElement("button", {
-    className: "" + (theme ? classname[theme] : classname.light),
-    onClick: onClick,
+    className: (theme ? classname[theme] : classname.light) + " " + (className || '') + " " + (disabled ? styles.disabled : ''),
+    onClick: handleClick,
     style: {
       color: color
     }
@@ -535,9 +563,10 @@ var Tag = function Tag(_ref) {
 };
 
 var AddButton = function AddButton(_ref) {
-  var onClick = _ref.onClick;
+  var onClick = _ref.onClick,
+    disabled = _ref.disabled;
   return React.createElement("button", {
-    className: styles.addButton,
+    className: styles.addButton + " " + (disabled ? styles.disabled : ''),
     onClick: onClick
   }, React.createElement("svg", {
     width: '17',
@@ -802,14 +831,15 @@ var Circle = function Circle(_ref) {
     icon = _ref.icon,
     active = _ref.active,
     onClick = _ref.onClick,
-    className = _ref.className;
+    className = _ref.className,
+    disabled = _ref.disabled;
   var classes = {
     yellow: styles.circleYellow,
     blue: styles.circleBlue,
     red: styles.circleRed
   };
   return React__default.createElement("button", {
-    className: classes[variant] + " " + (active ? styles.circleActive : '') + " " + (className || ''),
+    className: classes[variant] + " " + (active ? styles.circleActive : '') + " " + (className || '') + " " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, icon);
 };
@@ -824,7 +854,8 @@ var ButtonShadow = function ButtonShadow(_ref) {
     className = _ref.className,
     size = _ref.size,
     altFont = _ref.altFont,
-    color = _ref.color;
+    color = _ref.color,
+    disabled = _ref.disabled;
   var classname = {
     light: styles.buttonShadow,
     dark: styles.buttonShadowDark
@@ -842,7 +873,7 @@ var ButtonShadow = function ButtonShadow(_ref) {
     fillWidth: styles.buttonFill
   };
   return React.createElement("button", {
-    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + " " + (color ? colors[color] : '') + "  \n      ",
+    className: (variant ? classname[variant] : classname.light) + " " + (rounded ? styles.rounded : '') + " " + (className || '') + " " + (size ? sizesClassNames[size] : '') + " " + (altFont ? styles.altFont : '') + " " + (color ? colors[color] : '') + "  \n        " + (disabled ? styles.disabled : '') + "\n      ",
     onClick: onClick
   }, iconPosition === 'left' && icon, text, iconPosition === 'right' && icon);
 };

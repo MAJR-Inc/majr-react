@@ -949,6 +949,11 @@
   stroke: #f9f9f9 !important;
 }
 
+._styles-module__disabled__2RWmX {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   ._styles-module__navbarLight__2o0Ql, ._styles-module__navbarDark__eP6C_ {
     display: flex;

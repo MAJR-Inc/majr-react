@@ -4,13 +4,26 @@ import styles from '../styles.module.css'
 interface SwitchProps {
   value: boolean
   setSwitch: (target: boolean) => void
+  disabled?: boolean
+  className?: string
 }
 
-export const ThemeSwitch = ({ value, setSwitch }: SwitchProps) => {
+export const ThemeSwitch = ({
+  value,
+  setSwitch,
+  disabled,
+  className
+}: SwitchProps) => {
+  const handleClick = () => {
+    if (!disabled) setSwitch(!value)
+  }
   return (
     <div
-      className={`${!value ? styles.switch : styles.switchDark}`}
-      onClick={() => setSwitch(!value)}
+      className={`${!value ? styles.switch : styles.switchDark}
+        ${className || ''}
+        ${disabled ? styles.disabled : ''}
+      `}
+      onClick={handleClick}
     >
       <div
         className={!value ? styles.switch__innerActive : styles.switch__inner}
@@ -65,16 +78,25 @@ interface SwitchProps2 {
   value: boolean
   setSwitch: (target: boolean) => void
   variant?: 'light' | 'dark'
+  className?: string
+  disabled?: boolean
 }
 export const SwitchComponent = ({
   value,
   setSwitch,
-  variant
+  variant,
+  className,
+  disabled
 }: SwitchProps2) => {
+  const handleClick = () => {
+    if (!disabled) setSwitch(!value)
+  }
   return (
     <div
-      className={`${variant === 'light' ? styles.switch2 : styles.switch2Dark}`}
-      onClick={() => setSwitch(!value)}
+      className={`${
+        variant === 'light' ? styles.switch2 : styles.switch2Dark
+      } ${className || ''} ${disabled ? styles.disabled : ''}`}
+      onClick={handleClick}
     >
       <div
         className={value ? styles.switch2__innerActive : styles.switch2__inner}

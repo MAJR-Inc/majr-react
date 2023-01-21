@@ -3,11 +3,15 @@ import styles from '../styles.module.css'
 
 interface AddButtonProps {
   onClick?: () => void
+  disabled?: boolean
 }
 
-export const AddButton = ({ onClick }: AddButtonProps) => {
+export const AddButton = ({ onClick, disabled }: AddButtonProps) => {
   return (
-    <button className={styles.addButton} onClick={onClick}>
+    <button
+      className={`${styles.addButton} ${disabled ? styles.disabled : ''}`}
+      onClick={onClick}
+    >
       <svg
         width='17'
         height='17'
