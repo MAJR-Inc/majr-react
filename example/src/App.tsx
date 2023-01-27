@@ -162,6 +162,12 @@ const App = () => {
         variant={theme ? 'dark' : 'light'}
       />
       <br />
+      <Button
+        onClick={() => {}}
+        text='Highlight btn'
+        variant={theme ? 'highlightdark' : 'highlight'}
+      />
+      <br />
       <Link
         text='Link - Def.'
         link='https://github.com'
