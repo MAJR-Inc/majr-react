@@ -8,6 +8,7 @@ interface ButtonProps {
   variant?: 'light' | 'dark' | 'main'
   rounded?: boolean
   disabled?: boolean
+  className?: string
 }
 
 export const IconButton = ({
@@ -15,7 +16,8 @@ export const IconButton = ({
   onClick,
   variant,
   rounded,
-  disabled
+  disabled,
+  className
 }: ButtonProps) => {
   const classname: any = {
     light: styles.iconButton,
@@ -26,7 +28,7 @@ export const IconButton = ({
     <button
       className={`${variant ? classname[variant] : classname.light} ${
         rounded ? styles.rounded : ''
-      }${disabled ? styles.disabled : ''}`}
+      } ${disabled ? styles.disabled : ''} ${className || ''}`}
       onClick={onClick}
     >
       {icon}
