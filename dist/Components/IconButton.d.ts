@@ -5,6 +5,7 @@ interface ButtonProps {
     variant?: 'light' | 'dark' | 'main';
     rounded?: boolean;
     disabled?: boolean;
+    className?: string;
 }
-export declare const IconButton: ({ icon, onClick, variant, rounded, disabled }: ButtonProps) => JSX.Element;
+export declare const IconButton: ({ icon, onClick, variant, rounded, disabled, className }: ButtonProps) => JSX.Element;
 export {};

@@ -14,6 +14,7 @@ interface InputProps {
   placeholder?: string
   disabled?: boolean
   className?: string
+  size?: 'default' | 'fill'
 }
 
 export const Input = ({
@@ -22,7 +23,8 @@ export const Input = ({
   variant,
   placeholder,
   disabled,
-  className
+  className,
+  size = 'default'
 }: InputProps) => {
   const classname: any = {
     light: styles.input,
@@ -34,12 +36,16 @@ export const Input = ({
   }
   const [seePass, setSeePass] = React.useState(false)
   return (
-    <section className={`${styles.inputWrapper}`}>
+    <section
+      className={`${styles.inputWrapper} ${
+        size === 'fill' ? styles.inputWrapperFill : ''
+      }`}
+    >
       <input
         type={variant?.includes('password') && !seePass ? 'password' : 'text'}
         className={`${variant ? classname[variant] : classname.light} ${
           disabled ? styles.disabled : ''
-        } ${className || ''}`}
+        } ${className || ''} ${size === 'fill' ? styles.inputFill : ''}`}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder || 'Enter text'}

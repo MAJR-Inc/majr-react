@@ -6,6 +6,7 @@ interface InputProps {
     placeholder?: string;
     disabled?: boolean;
     className?: string;
+    size?: 'default' | 'fill';
 }
-export declare const Input: ({ value, onChange, variant, placeholder, disabled, className }: InputProps) => JSX.Element;
+export declare const Input: ({ value, onChange, variant, placeholder, disabled, className, size }: InputProps) => JSX.Element;
 export {};

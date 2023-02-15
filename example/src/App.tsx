@@ -212,14 +212,23 @@ const App = () => {
         disabled={true}
       />
       <Input
-        text={username}
-        setText={setUsername}
+        value={username}
+        onChange={setUsername}
         placeholder='Enter password'
         variant={theme ? 'passwordDark' : 'password'}
       />
+      <section style={{ width: '300px' }}>
+        <Input
+          value={username}
+          onChange={setUsername}
+          placeholder='Enter password'
+          size='fill'
+          variant={theme ? 'passwordDark' : 'password'}
+        />
+      </section>
       <Input
-        text={username}
-        setText={setUsername}
+        value={username}
+        onChange={setUsername}
         placeholder='Search...'
         variant={theme ? 'searchDark' : 'search'}
       />

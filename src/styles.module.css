@@ -224,7 +224,6 @@
 }
 .navbarBtnActive, .navbarBtnActiveDark {
   padding: 0 15px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 50px;
@@ -253,9 +252,13 @@
   display: block;
   margin-bottom: 20px;
 }
+.inputWrapper.inputWrapperFill {
+  width: 100%;
+}
 
 .input, .textarea, .inputDark, .textareaDark {
   max-width: 250px;
+  width: 170px;
   height: 50px;
   line-height: 50px;
   font-family: "Satoshi", sans-serif;
@@ -276,11 +279,15 @@
 .input ~ svg, .textarea ~ svg, .inputDark ~ svg, .textareaDark ~ svg {
   cursor: pointer;
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
+}
+.input.inputFill, .inputFill.textarea, .inputFill.inputDark, .inputFill.textareaDark {
+  width: calc(100% - 80px);
+  max-width: calc(100% - 80px);
 }
 
 .inputDark, .textareaDark {
@@ -512,7 +519,6 @@
 }
 
 .profile, .image, .imageDark, .profileDark {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px;
@@ -899,7 +905,6 @@
 
 .buttonShadow {
   background-color: transparent;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 8px;
@@ -972,7 +977,6 @@
   .navbarLight, .navbarDark {
     display: flex;
     flex-direction: column;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -1005,12 +1009,10 @@
   .footer, .footerDark {
     display: flex;
     flex-direction: column;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .footer section, .footerDark section {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 20px 0;
