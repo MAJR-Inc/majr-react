@@ -4,7 +4,7 @@
   "description": "Design system for MAJR DAO",
   "author": "TomasDmArg",
   "license": "MIT",
-  "repository": "TomasDmArg/majr-react",
+  "repository": "MAJR-Inc/majr-react",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
